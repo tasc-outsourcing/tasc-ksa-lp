@@ -1,10 +1,57 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import imgTascLogo from "../../assets/0399c2ba8c161094279ce73755571815f5821b3f.png";
 import imgHeroBackground from "../../assets/92af4b4f6d222919f67bb7c7d0aac1c95ccd0dd3.png";
 import imgRamadanIcon from "../../assets/26801037ad5843ab17db03f4b2a768ed8573f97c.png";
 
+declare global {
+  interface Window {
+    hbspt?: {
+      forms: {
+        create: (options: {
+          portalId: string;
+          formId: string;
+          region?: string;
+          target?: string;
+        }) => void;
+      };
+    };
+  }
+}
+
 export function KSABusinessTravel() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+  const hubspotFormTargetId = "hubspot-form-container";
+
+  useEffect(() => {
+    const existingForm = document.querySelector(`#${hubspotFormTargetId} .hbspt-form`);
+    if (existingForm) return;
+
+    const createForm = () => {
+      if (!window.hbspt) return;
+      window.hbspt.forms.create({
+        portalId: "20309062",
+        formId: "2ffd5877-cb68-47af-87e2-8d4aed687890",
+        region: "na1",
+        target: `#${hubspotFormTargetId}`,
+      });
+    };
+
+    if (document.querySelector("script[src='//js.hsforms.net/forms/embed/v2.js']")) {
+      createForm();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = "//js.hsforms.net/forms/embed/v2.js";
+    script.async = true;
+    script.charset = "utf-8";
+    script.onload = createForm;
+    document.body.appendChild(script);
+
+    return () => {
+      script.onload = null;
+    };
+  }, []);
 
   return (
     <div className="w-full bg-white relative overflow-hidden">
@@ -41,7 +88,7 @@ export function KSABusinessTravel() {
               <h3 className="text-[20px] font-['Poppins'] font-bold text-[#005f83] mb-[18px] text-center">
                 Get Your Setup Roadmap
               </h3>
-              <form className="space-y-[12px]">
+              <form className="space-y-[12px] hubspot-fallback-form">
                 <div>
                   <label className="block text-[#005f83] text-[12px] font-['Gotham'] mb-[6px] font-medium">
                     Name *
