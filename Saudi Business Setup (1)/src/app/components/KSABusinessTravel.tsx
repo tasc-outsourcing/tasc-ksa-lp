@@ -29,6 +29,15 @@ export function KSABusinessTravel() {
     );
     if (existingForm) return;
 
+    const markLoaded = () => {
+      [hubspotFormTargetId, hubspotHeroFormTargetId].forEach((id) => {
+        const target = document.getElementById(id);
+        if (target && target.querySelector(".hbspt-form")) {
+          target.closest(".hubspot-card")?.classList.add("hubspot-loaded");
+        }
+      });
+    };
+
     const createForm = () => {
       if (!window.hbspt) return;
       window.hbspt.forms.create({
@@ -43,6 +52,8 @@ export function KSABusinessTravel() {
         region: "na1",
         target: `#${hubspotHeroFormTargetId}`,
       });
+      // HubSpot injects asynchronously; give it a moment and then mark loaded.
+      window.setTimeout(markLoaded, 1000);
     };
 
     if (document.querySelector("script[src='//js.hsforms.net/forms/embed/v2.js']")) {
@@ -93,7 +104,7 @@ export function KSABusinessTravel() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-white rounded-[16px] p-[25px] shadow-2xl">
+            <div className="bg-white rounded-[16px] p-[25px] shadow-2xl hubspot-card">
               <h3 className="text-[20px] font-['Poppins'] font-bold text-[#005f83] mb-[18px] text-center">
                 Get Your Setup Roadmap
               </h3>
@@ -489,7 +500,7 @@ export function KSABusinessTravel() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-white rounded-[12px] p-[18px] shadow-lg" id="hubspot-form-container">
+            <div className="bg-white rounded-[12px] p-[18px] shadow-lg hubspot-card" id="hubspot-form-container">
               <form className="space-y-[8px]">
                 <div>
                   <label className="block text-[#005f83] text-[10px] font-['Poppins'] mb-[3px] font-medium">
