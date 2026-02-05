@@ -21,9 +21,12 @@ declare global {
 export function KSABusinessTravel() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   const hubspotFormTargetId = "hubspot-form-container";
+  const hubspotHeroFormTargetId = "hubspot-form-container-hero";
 
   useEffect(() => {
-    const existingForm = document.querySelector(`#${hubspotFormTargetId} .hbspt-form`);
+    const existingForm = document.querySelector(
+      `#${hubspotFormTargetId} .hbspt-form, #${hubspotHeroFormTargetId} .hbspt-form`
+    );
     if (existingForm) return;
 
     const createForm = () => {
@@ -33,6 +36,12 @@ export function KSABusinessTravel() {
         formId: "2ffd5877-cb68-47af-87e2-8d4aed687890",
         region: "na1",
         target: `#${hubspotFormTargetId}`,
+      });
+      window.hbspt.forms.create({
+        portalId: "20309062",
+        formId: "2ffd5877-cb68-47af-87e2-8d4aed687890",
+        region: "na1",
+        target: `#${hubspotHeroFormTargetId}`,
       });
     };
 
@@ -88,6 +97,7 @@ export function KSABusinessTravel() {
               <h3 className="text-[20px] font-['Poppins'] font-bold text-[#005f83] mb-[18px] text-center">
                 Get Your Setup Roadmap
               </h3>
+              <div id={hubspotHeroFormTargetId} className="mb-[12px]"></div>
               <form className="space-y-[12px] hubspot-fallback-form">
                 <div>
                   <label className="block text-[#005f83] text-[12px] font-['Gotham'] mb-[6px] font-medium">
