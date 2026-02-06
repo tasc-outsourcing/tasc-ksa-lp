@@ -18,6 +18,9 @@ This project is structured as a static site for Vercel. Each folder becomes a la
 
 `lp.tascoutsourcing.sa/retail/`
 
+## SEO rule (apply to every landing page)
+- Include a unique `<title>` and a `<meta name="description">` that reflect the page content.
+
 ## Notes
 - `index.html` at the root is a directory of all landing pages.
 - Vercel will serve this as a static site without any build step.
