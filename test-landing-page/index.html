@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saudization Radar 2026 | TASC</title>
+    <meta name="description" content="Saudization Radar 2026 Built by TASC, a premium workforce partner for government, semi government, and private sector employers. Saudization Radar 2026 A pra..." />
+    <style>
+      :root {
+        --navy: #005f83;
+        --navy-dark: #043f59;
+        --yellow: #ffe102;
+        --cyan: #00bfff;
+        --green: #56db46;
+        --ink: #0f1d2b;
+        --muted: #4a5968;
+        --bg: #f5f8fc;
+        --card: #ffffff;
+        --radius: 18px;
+      }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family: Poppins, Segoe UI, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+      .container { width: min(1240px, calc(100% - 40px)); margin: 0 auto; }
+
+      .topbar { background: #fff; padding: 18px 0; border-bottom: 1px solid #e8eef4; }
+      .brand { display:flex; align-items:center; gap:12px; color: var(--navy); font-weight: 800; letter-spacing: .02em; font-size: 1.05rem; }
+      .brand img { height: 38px; width: auto; object-fit: contain; }
+
+      .hero {
+        position: relative;
+        background: linear-gradient(120deg, var(--navy) 0%, var(--navy-dark) 68%);
+        padding: 58px 0 64px;
+        color: #fff;
+        overflow: hidden;
+        min-height: 760px;
+        display: flex;
+        align-items: center;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url('/assets/92af4b4f6d222919f67bb7c7d0aac1c95ccd0dd3-CWWLvEJv.png');
+        background-size: cover;
+        background-position: center top;
+        opacity: .46;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,.45);
+      }
+      .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: .92fr 1.08fr; gap: 30px; align-items: stretch; }
+      .hero-copy { padding: 12px 0; }
+      .badge { display:inline-block; background: rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:8px 14px; font-size:.82rem; margin-bottom:14px; }
+      h1 { margin: 0 0 14px; font-size: clamp(2.05rem, 4.2vw, 3.4rem); line-height: 1.1; letter-spacing: -.03em; text-shadow: 0 4px 14px rgba(0,0,0,.55); }
+      .hero-copy p { margin:0 0 22px; font-size: clamp(1rem, 1.5vw, 1.2rem); opacity: .96; max-width: 62ch; text-shadow: 0 2px 8px rgba(0,0,0,.45); }
+      .cta { display:inline-block; text-decoration:none; border-radius:999px; padding:12px 24px; color:#00384f; font-weight:700; background:linear-gradient(95deg,var(--yellow),#fff07d); }
+
+      .hero-card { background: rgba(255,255,255,.96); color: var(--ink); border-radius: 16px; padding: 22px; box-shadow: 0 20px 48px rgba(0,22,37,.28); }
+      .hero-card h3 { margin: 0 0 10px; color: var(--navy); font-size: 1.2rem; }
+      .hero-card p { margin:0 0 14px; color: var(--muted); font-size: .95rem; }
+      .field { height: 42px; border:1px solid #d6e3ef; border-radius:10px; background:#fff; margin-bottom:10px; }
+      .field:last-of-type { margin-bottom:14px; }
+      .hero-card .cta { width: 100%; text-align:center; background: linear-gradient(95deg, var(--cyan), var(--green)); color: #fff; }
+
+      .trust { background: var(--yellow); color: #00425d; font-weight: 600; text-align: center; padding: 16px 20px; }
+
+      .stats { background: #ffffff; padding: 26px 0; border-bottom: 1px solid #e6edf5; }
+      .stats-grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+      .stat { background: #f2f8ff; border: 1px solid #d7e8f7; border-radius: 12px; padding: 14px; color: #0e3550; font-weight: 600; text-align: center; }
+
+      .problem { padding: 40px 0 56px; background:#fff; }
+      .problem h2 { margin: 0 0 16px; text-align:center; font-size: clamp(2rem,4vw,3.2rem); line-height:1.1; letter-spacing:-.03em; background: linear-gradient(95deg,var(--cyan),var(--green)); -webkit-background-clip: text; background-clip:text; color:transparent; }
+      .problem-shell { background: linear-gradient(145deg, #005f83 0%, #004862 60%, #00526f 100%); border-radius: 28px; padding: 22px; box-shadow: 0 22px 42px rgba(1,39,63,.28); }
+      .problem-grid { display:grid; grid-template-columns: 1fr; gap:14px; }
+      .problem-card { background: rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.2); border-radius:16px; padding:18px; color:#fff; }
+      .problem-card p { margin:0; font-size:1.06rem; line-height:1.6; font-weight:600; }
+
+      .offer { padding: 40px 0 56px; background:linear-gradient(145deg,#005f83,#004a68,#003855); }
+      .offer h2 { margin: 0 0 16px; text-align:center; font-size: clamp(2rem,4vw,3.2rem); line-height:1.1; letter-spacing:-.03em; background: linear-gradient(95deg,var(--cyan),var(--green)); -webkit-background-clip: text; background-clip:text; color:transparent; }
+      .offer-shell { border-radius: 28px; }
+      .offer-grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:14px; }
+      .offer-card { background: rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.2); border-radius:16px; padding:16px; color:#fff; font-weight:600; line-height:1.5; }
+
+      .who { padding: 46px 0; background:#fff; }
+      .who h2 { margin: 0 0 14px; text-align:center; color:var(--navy); font-size: clamp(1.9rem,3.4vw,3rem); letter-spacing:-.02em; }
+      .who-sub { text-align:center; color:#005f83; font-weight:600; margin-bottom:18px; }
+      .who-grid { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:16px; }
+      .who-card { background: linear-gradient(145deg, rgba(0,191,255,.10), rgba(86,219,70,.10)); border:2px solid rgba(0,191,255,.25); border-radius:16px; padding:16px; text-align:center; color:#005f83; font-weight:600; }
+
+      .why { padding: 46px 0; background:#f5f5f5; }
+      .why h2 { margin: 0 0 18px; text-align:center; color:var(--navy); font-size: clamp(1.9rem,3.4vw,3rem); letter-spacing:-.02em; }
+      .why-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px; }
+      .why-card { background:#fff; border-radius:18px; padding:20px; box-shadow:0 10px 24px rgba(7,50,80,.12); }
+      .why-card .dot { width:44px; height:44px; border-radius:12px; background: linear-gradient(135deg,var(--cyan),var(--green)); margin-bottom:12px; }
+      .why-card p { margin:0; color:#214058; font-weight:600; line-height:1.5; }
+
+      .steps { padding: 46px 0 30px; background:#fff; }
+      .steps h2 { margin:0 0 24px; text-align:center; font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing:-.02em; background: linear-gradient(95deg,var(--cyan),var(--green)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+      .step { display:flex; gap:16px; align-items:flex-start; margin-bottom:14px; }
+      .step-num { flex:0 0 52px; height:52px; border-radius:999px; background:linear-gradient(135deg,var(--cyan),var(--green)); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; }
+      .step-card { flex:1; background:#f5f5f5; border-radius:14px; padding:16px 18px; color:#1f3a51; font-weight:600; }
+
+      .insights { padding: 18px 0 50px; background:#fff; }
+      .insights-grid { display:grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap:16px; }
+      .insight-card { grid-column: span 6; background:var(--card); border-radius: var(--radius); box-shadow:0 10px 28px rgba(5,52,85,.11); padding:22px; }
+      .insight-card.featured { grid-column: span 12; background: linear-gradient(135deg,#fff 0%,#f3f9ff 100%); border:1px solid #d9e9f8; }
+      .insight-card h3 { margin:0 0 10px; color:var(--navy); font-size: clamp(1.2rem,2vw,1.7rem); }
+      .insight-card p { margin:0 0 10px; color:#213345; line-height:1.6; }
+      .insight-card ul { margin:0; padding:0; list-style:none; }
+      .insight-card li { position:relative; padding-left:24px; margin-bottom:8px; color:#213345; }
+      .insight-card li::before { content:""; width:9px; height:9px; border-radius:999px; background:linear-gradient(135deg,var(--cyan),var(--green)); position:absolute; left:0; top:.58em; }
+
+      .final-cta { padding:46px 0; background:linear-gradient(120deg,var(--navy),#00465f); text-align:center; color:#fff; }
+      .final-cta h2 { margin:0 0 10px; font-size: clamp(1.8rem,3.3vw,2.9rem); letter-spacing:-.02em; }
+      .final-cta p { margin:0 0 18px; opacity:.92; }
+
+      .proof { padding: 46px 0; background:#fff; }
+      .proof h2 { margin:0 0 16px; text-align:center; font-size: clamp(1.9rem,3.4vw,3rem); letter-spacing:-.02em; background: linear-gradient(95deg,var(--cyan),var(--green)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+      .proof-box { background: linear-gradient(145deg, rgba(0,95,131,.05), rgba(0,191,255,.10)); border:2px solid rgba(0,191,255,.2); border-radius:20px; padding:20px; text-align:center; color:#005f83; font-weight:700; margin-bottom:18px; }
+
+      .form-band { padding:44px 0; background: var(--yellow); }
+      .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:24px; align-items:start; }
+      .form-copy h2 { color:#005f83; font-size: clamp(1.8rem,3vw,2.4rem); margin:0 0 10px; }
+      .form-copy p { color:#005f83; margin:0 0 8px; }
+      .form-card { background:#fff; border-radius:16px; padding:18px; box-shadow:0 10px 20px rgba(7,50,80,.16); }
+      .form-card .field { background:#fff; border:1px solid #c6d5e1; }
+
+      .faq-wrap { padding: 52px 0; background:#005f83; }
+      .faq-wrap h2 { margin:0 0 14px; text-align:center; font-size: clamp(1.9rem,3.4vw,3rem); letter-spacing:-.02em; background: linear-gradient(95deg,var(--cyan),var(--green)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+      details { background: transparent; border-bottom:1px solid rgba(255,255,255,.25); padding: 12px 4px; margin-bottom: 2px; }
+      summary { cursor: pointer; font-weight: 700; color: #fff; }
+      details p { margin: 10px 0 0; color: rgba(255,255,255,.9); }
+
+      footer { background: #033046; color: rgba(255,255,255,.74); text-align: center; padding: 24px 20px; font-size: .92rem; }
+
+      @media (max-width: 980px) {
+        .hero-grid { grid-template-columns: 1fr; }
+        .offer-grid, .why-grid, .who-grid, .form-grid { grid-template-columns: 1fr; }
+        .insight-card, .insight-card.featured { grid-column: span 12; }
+        .stats-grid { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 560px) {
+        .container { width: min(1240px, calc(100% - 28px)); }
+        .hero { padding: 46px 0 52px; }
+        .hero-card { padding: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="brand">
+          <img src="/assets/0399c2ba8c161094279ce73755571815f5821b3f-kqk7SJgK.png" alt="TASC Logo" />
+          <span>TASC Outsourcing</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Saudi Market Intelligence</span>
+          <h1>Saudization Radar 2026</h1>
+          <p>Built by TASC, a premium workforce partner for government, semi government, and private sector employers.</p>
+          <a class="cta" href="#contact">Book a Consultation</a>
+        </div>
+        <aside class="hero-card">
+          <h3>Request The Full Brief</h3>
+          <p>Share your details and our team will send the full document and next-step recommendations.</p>
+          <div class="field"></div>
+          <div class="field"></div>
+          <div class="field"></div>
+          <div class="field"></div>
+          <a class="cta" href="#contact">Book a Consultation</a>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust">starting too late - &gt; cost spikes • hiring without retention - &gt; churn rates • reporting gaps during audits or bids -&gt; compliance risk</div>
+
+    <section class="problem">
+      <div class="container">
+        <h2>The problem</h2>
+        <div class="problem-shell">
+          <div class="problem-grid">
+            <div class="problem-card"><p>starting too late - &gt; cost spikes</p></div>
+            <div class="problem-card"><p>hiring without retention - &gt; churn rates</p></div>
+            <div class="problem-card"><p>reporting gaps during audits or bids -&gt; compliance risk</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <h2>This report helps you avoid</h2>
+        <div class="offer-shell">
+          <div class="offer-grid"><div class="offer-card">starting too late - &gt; cost spikes</div><div class="offer-card">hiring without retention - &gt; churn rates</div><div class="offer-card">reporting gaps during audits or bids -&gt; compliance risk</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="who">
+      <div class="container">
+        <h2>Who it is for</h2>
+        <p class="who-sub">This report is for leaders driving workforce and compliance outcomes.</p>
+        <div class="who-grid">
+          <article class="who-card">CHRO, HR Director, Head of Talent</article>
+          <article class="who-card">CEO, COO, CFO, business unit leaders</article>
+          <article class="who-card">Procurement, commercial, operations heads</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <h2>Why TASC</h2>
+        <div class="why-grid"><article class="why-card"><div class="dot"></div><p>A clear timeline of key localization decisions and effective dates</p></article><article class="why-card"><div class="dot"></div><p>What changes mean for hiring plans in commercial, procurement, engineering, and sector specific roles</p></article><article class="why-card"><div class="dot"></div><p>The salary threshold blind spots that can break your compliance counting</p></article></div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <h2>Your execution journey in 3 steps</h2>
+        <div class="step"><div class="step-num">1</div><div class="step-card">A 90 day plan HR can run now, without disrupting operations</div></div><div class="step"><div class="step-num">2</div><div class="step-card">A 180 day pipeline plan to reduce churn and rehiring</div></div><div class="step"><div class="step-num">3</div><div class="step-card">A partner selection scorecard for workforce delivery</div></div>
+      </div>
+    </section>
+
+    <section class="insights">
+      <div class="container insights-grid"><article class="insight-card featured"><h3>Overview</h3><p>Saudization Radar 2026 A practical report for HR leaders and executives. What changed, what is next, and how to stay compliant without slowing the business.</p></article><article class="insight-card"><h3>The problem</h3><p>Saudization is now an operating priority, not a last minute hiring task. It impacts revenue roles, procurement, and service delivery.</p></article><article class="insight-card"><h3>This report helps you avoid</h3><ul><li>starting too late - &gt; cost spikes</li><li>hiring without retention - &gt; churn rates</li><li>reporting gaps during audits or bids -&gt; compliance risk</li></ul></article><article class="insight-card"><h3>Inside Saudization Radar 2026</h3><ul><li>A clear timeline of key localization decisions and effective dates</li><li>What changes mean for hiring plans in commercial, procurement, engineering, and sector specific roles</li><li>The salary threshold blind spots that can break your compliance counting</li><li>A 90 day plan HR can run now, without disrupting operations</li></ul></article></div>
+    </section>
+
+    <section class="proof">
+      <div class="container">
+        <h2>Proof from a national rollout</h2>
+        <div class="proof-box">High-volume Saudi onboarding delivered with compliance-first execution.</div>
+        <section class="stats"><div class="container stats-grid"><div class="stat">A 90 day plan HR can run now, without disrupting operations</div>
+<div class="stat">A 180 day pipeline plan to reduce churn and rehiring</div>
+<div class="stat">205 Saudi nationals onboarded</div></div></section>
+      </div>
+    </section>
+
+    <section class="form-band">
+      <div class="container form-grid">
+        <div class="form-copy">
+          <h2>Get the report</h2>
+          <p>Fill in your details and we will send the PDF to your inbox.</p>
+          <p>Instant delivery. No spam. Practical next steps.</p>
+        </div>
+        <div class="form-card">
+          <div class="field"></div>
+          <div class="field"></div>
+          <div class="field"></div>
+          <div class="field"></div>
+          <a class="cta" href="#contact">Book a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-wrap"><div class="container"><h2>Frequently Asked Questions</h2><details><summary>Is this report focused on policy or execution?</summary><p>Execution. It turns updates into actions and planning steps.</p></details>
+<details><summary>Does TASC only work with large companies?</summary><p>No. The best fit is any employer with real hiring volume or compliance exposure.</p></details>
+<details><summary>Can you support government and semi government projects?</summary><p>Yes, this is a core part of our delivery model.</p></details></div></section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>Ready to move from insight to execution?</h2>
+        <p>Get a focused diagnostic and a practical action plan for your team.</p>
+        <a class="cta" href="#contact">Book a Consultation</a>
+      </div>
+    </section>
+
+    <footer id="contact">Contact TASC Outsourcing for consultation and implementation support.</footer>
+  </body>
+</html>
