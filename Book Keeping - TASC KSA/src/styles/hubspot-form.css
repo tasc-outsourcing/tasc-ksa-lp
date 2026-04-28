@@ -9,6 +9,7 @@
 }
 
 /* Phone field: keep country-code select and number input on the same row */
+/* Target HubSpot's named wrappers (v2 embed) */
 .hubspot-form-container .hs-form .hs-phone-number-two-field-wrapper {
   display: flex !important;
   flex-direction: row !important;
@@ -30,6 +31,40 @@
 
 .hubspot-form-container .hs-form .hs-phone-number-field-number input {
   width: 100% !important;
+}
+
+/* Fallback: any .input div that contains both a select and a tel input */
+.hubspot-form-container .hs-form .input:has(select):has(input[type="tel"]) {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px;
+  align-items: center;
+}
+
+.hubspot-form-container .hs-form .input:has(select):has(input[type="tel"]) select {
+  flex: 0 0 90px;
+  width: 90px !important;
+}
+
+.hubspot-form-container .hs-form .input:has(select):has(input[type="tel"]) input[type="tel"] {
+  flex: 1 1 0;
+  width: 100% !important;
+}
+
+/* Fallback: dependent-field wrapper used in some HubSpot form versions */
+.hubspot-form-container .hs-form .hs-dependent-field {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.hubspot-form-container .hs-form .hs-dependent-field > .hs-form-field:first-child {
+  flex: 0 0 90px;
+}
+
+.hubspot-form-container .hs-form .hs-dependent-field > .hs-form-field:last-child {
+  flex: 1 1 0;
 }
 
 .hubspot-form-container .hs-form-field {
