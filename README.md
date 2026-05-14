@@ -1,26 +1,43 @@
-# TASC Outsourcing Landing Pages
+# TASC KSA Landing Pages
 
-This project is structured as a static site for Vercel. Each folder becomes a landing page at:
+This project is a static Vercel site for TASC KSA landing pages.
+
+Each folder at the project root becomes a page at:
 
 `lp.tascoutsourcing.sa/<folder-name>/`
 
-## Sample landing pages
-- /manufacturing/
-- /logistics/
-- /healthcare/
-- /technology/
-- /construction/
+## Active landing pages
+
+- `/saudi-business-visa/` - Saudi Business Visa
+- `/Saudi%20Business%20Visa/` - Saudi Business Visa original build
+- `/saudi-business-setup/` - Saudi Business Setup
+- `/book-keeping-ksa/` - Bookkeeping & ZATCA Compliance
+- `/test-landing-page/` - Saudization Radar 2026
+
+## Root page
+
+The root `index.html` is a TASC-branded directory for active landing pages only.
 
 ## Add a new landing page
-1. Create a new folder at the project root (example: `retail`).
+
+1. Create a new folder at the project root, for example `retail`.
 2. Add an `index.html` inside that folder.
-3. Deploy to Vercel. The page will be available at:
+3. Commit and push to `main`.
+4. Vercel will redeploy the site automatically.
+
+The page will be available at:
 
 `lp.tascoutsourcing.sa/retail/`
 
-## SEO rule (apply to every landing page)
-- Include a unique `<title>` and a `<meta name="description">` that reflect the page content.
+## SEO rule
+
+Every landing page should include:
+
+- A unique `<title>`
+- A unique `<meta name="description">`
 
 ## Notes
-- `index.html` at the root is a directory of all landing pages.
-- Vercel will serve this as a static site without any build step.
+
+- Old sample landing pages have been removed from the active repo.
+- GitHub repo: `tasc-outsourcing/tasc-ksa-lp`
+- Vercel project: `tasc-marketing/tasc-ksa-landing-pages`

@@ -3,87 +3,393 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TASC Outsourcing | Landing Pages</title>
-    <meta name="description" content="Landing pages for lp.tascoutsourcing.sa" />
+    <title>TASC Marketing | Landing Page Hub</title>
+    <meta
+      name="description"
+      content="Active TASC KSA landing pages for campaign, compliance, and market-entry services."
+    />
     <style>
       :root {
         color-scheme: light;
-        --bg: #f2f0e8;
-        --ink: #1a1a1a;
-        --accent: #b24f2a;
-        --card: #fffaf2;
+        --navy: #003d5b;
+        --blue: #005f83;
+        --cyan: #00bfff;
+        --green: #56db46;
+        --ink: #102633;
+        --muted: #5f7886;
+        --line: #d9e8ee;
+        --surface: #ffffff;
+        --soft: #f4fbfd;
       }
-      * { box-sizing: border-box; }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        background: radial-gradient(circle at top, #fff7e9, var(--bg));
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
         color: var(--ink);
+        background:
+          linear-gradient(135deg, rgba(0, 191, 255, 0.1), transparent 34%),
+          linear-gradient(315deg, rgba(86, 219, 70, 0.12), transparent 30%),
+          var(--soft);
       }
-      header {
-        padding: 64px 24px 32px;
-        text-align: center;
-      }
-      h1 { font-size: 40px; margin: 0 0 8px; }
-      p { margin: 0 auto; max-width: 640px; }
-      main {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 24px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 16px;
-      }
+
       a {
-        display: block;
-        padding: 20px;
-        text-decoration: none;
         color: inherit;
-        background: var(--card);
-        border: 2px solid #f0e0c5;
-        border-radius: 16px;
-        transition: transform 160ms ease, border-color 160ms ease;
       }
-      a:hover { transform: translateY(-4px); border-color: var(--accent); }
-      .tag { color: var(--accent); font-weight: 600; }
-      footer { text-align: center; padding: 24px; font-size: 14px; }
+
+      .shell {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 48px 0 36px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--blue);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--cyan), var(--green));
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0;
+      }
+
+      .hero {
+        padding: 62px 0 54px;
+        border-top: 1px solid rgba(0, 95, 131, 0.12);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+        gap: 48px;
+        align-items: end;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        color: var(--navy);
+        font-size: clamp(42px, 8vw, 86px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .hero p {
+        max-width: 620px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(17px, 2vw, 21px);
+        line-height: 1.55;
+      }
+
+      .status-panel {
+        border-left: 3px solid var(--green);
+        padding: 8px 0 8px 22px;
+      }
+
+      .status-panel span {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .status-panel strong {
+        display: block;
+        margin-top: 8px;
+        color: var(--blue);
+        font-size: 28px;
+      }
+
+      main {
+        padding: 8px 0 72px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 22px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 18px;
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--navy);
+        font-size: 24px;
+      }
+
+      .section-head p {
+        max-width: 420px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .page-list {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--surface);
+        box-shadow: 0 24px 80px rgba(0, 61, 91, 0.08);
+      }
+
+      .page-card {
+        min-height: 240px;
+        padding: 24px;
+        text-decoration: none;
+        border-right: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition:
+          transform 180ms ease,
+          background-color 180ms ease,
+          color 180ms ease;
+      }
+
+      .page-card:last-child {
+        border-right: 0;
+      }
+
+      .page-card:hover,
+      .page-card:focus-visible {
+        background: var(--navy);
+        color: white;
+        transform: translateY(-4px);
+        outline: 0;
+      }
+
+      .page-card:hover .eyebrow,
+      .page-card:hover p,
+      .page-card:focus-visible .eyebrow,
+      .page-card:focus-visible p {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .eyebrow {
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .page-card h3 {
+        margin: 18px 0 12px;
+        color: inherit;
+        font-size: 22px;
+        line-height: 1.15;
+      }
+
+      .page-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .arrow {
+        color: var(--green);
+        font-size: 24px;
+      }
+
+      footer {
+        padding: 26px 0 34px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .brand,
+        h1,
+        .hero p,
+        .status-panel,
+        .page-list {
+          animation: rise 520ms ease both;
+        }
+
+        h1 {
+          animation-delay: 80ms;
+        }
+
+        .hero p,
+        .status-panel {
+          animation-delay: 150ms;
+        }
+
+        .page-list {
+          animation-delay: 220ms;
+        }
+
+        @keyframes rise {
+          from {
+            opacity: 0;
+            transform: translateY(14px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+
+      @media (max-width: 920px) {
+        .hero-grid,
+        .section-head {
+          grid-template-columns: 1fr;
+          display: grid;
+        }
+
+        .page-list {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .page-card {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .page-card:nth-child(odd) {
+          border-right: 1px solid var(--line);
+        }
+      }
+
+      @media (max-width: 620px) {
+        .shell {
+          width: min(100% - 28px, 1120px);
+        }
+
+        header {
+          padding-top: 28px;
+        }
+
+        .hero {
+          padding-top: 42px;
+        }
+
+        .page-list {
+          grid-template-columns: 1fr;
+        }
+
+        .page-card,
+        .page-card:nth-child(odd) {
+          min-height: 190px;
+          border-right: 0;
+        }
+      }
     </style>
   </head>
   <body>
-    <header>
-      <h1>TASC Outsourcing Landing Pages</h1>
-      <p>Use the links below to preview the sample landing pages. Add more folders to create new URLs under lp.tascoutsourcing.sa.</p>
+    <header class="shell">
+      <div class="brand" aria-label="TASC Marketing">
+        <span class="brand-mark">T</span>
+        <span>TASC Marketing</span>
+      </div>
     </header>
-    <main>
-      <a href="/manufacturing/">
-        <div class="tag">Manufacturing</div>
-        <h2>Skilled Teams for Production</h2>
-      </a>
-      <a href="/logistics/">
-        <div class="tag">Logistics</div>
-        <h2>Fulfillment That Moves Faster</h2>
-      </a>
-      <a href="/healthcare/">
-        <div class="tag">Healthcare</div>
-        <h2>Compliance-Ready Staffing</h2>
-      </a>
-      <a href="/technology/">
-        <div class="tag">Technology</div>
-        <h2>Specialists for Scale</h2>
-      </a>
-      <a href="/construction/">
-        <div class="tag">Construction</div>
-        <h2>On-Site Support, On Time</h2>
-      </a>
-      <a href="/saudi-business-visa/">
-        <div class="tag">Saudi Business Visa</div>
-        <h2>Business Travel & Compliance</h2>
-      </a>
-      <a href="/saudi-business-setup/">
-        <div class="tag">Saudi Business Setup</div>
-        <h2>Business Formation Support</h2>
-      </a>
+
+    <section class="hero shell">
+      <div class="hero-grid">
+        <div>
+          <h1>TASC KSA landing page hub</h1>
+          <p>
+            Active campaign and service pages for Saudi market entry, workforce
+            compliance, business travel, and accounting support.
+          </p>
+        </div>
+        <div class="status-panel">
+          <span>Production domain</span>
+          <strong>lp.tascoutsourcing.sa</strong>
+        </div>
+      </div>
+    </section>
+
+    <main class="shell">
+      <div class="section-head">
+        <h2>Active pages</h2>
+        <p>
+          These are the live landing pages currently maintained for TASC KSA.
+        </p>
+      </div>
+
+      <div class="page-list" aria-label="Active TASC landing pages">
+        <a class="page-card" href="/saudi-business-visa/">
+          <div>
+            <div class="eyebrow">Business travel</div>
+            <h3>Saudi Business Visa</h3>
+            <p>Support for compliant business travel into Saudi Arabia.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+
+        <a class="page-card" href="/Saudi%20Business%20Visa/">
+          <div>
+            <div class="eyebrow">Original build</div>
+            <h3>Saudi Business Visa</h3>
+            <p>The original build retained for review and comparison.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+
+        <a class="page-card" href="/saudi-business-setup/">
+          <div>
+            <div class="eyebrow">Market entry</div>
+            <h3>Saudi Business Setup</h3>
+            <p>Business formation, RHQ, and market-entry support.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+
+        <a class="page-card" href="/book-keeping-ksa/">
+          <div>
+            <div class="eyebrow">Accounting</div>
+            <h3>Bookkeeping &amp; ZATCA Compliance</h3>
+            <p>Bookkeeping, tax, and ZATCA compliance services in KSA.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+
+        <a class="page-card" href="/test-landing-page/">
+          <div>
+            <div class="eyebrow">Workforce compliance</div>
+            <h3>Saudization Radar 2026</h3>
+            <p>A practical guide for Saudi workforce planning.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+      </div>
     </main>
-    <footer>lp.tascoutsourcing.sa</footer>
+
+    <footer class="shell">
+      Maintained by TASC Marketing. Updates to the GitHub main branch redeploy
+      this hub through Vercel.
+    </footer>
   </body>
 </html>
