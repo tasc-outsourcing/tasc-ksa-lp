@@ -1,43 +1,56 @@
 # TASC KSA Landing Pages
 
-This project is a static Vercel site for TASC KSA landing pages.
+This is a static Vercel site for TASC KSA landing pages.
 
-Each folder at the project root becomes a page at:
+Each live landing page has one folder at the project root:
 
-`lp.tascoutsourcing.sa/<folder-name>/`
+```text
+page-folder/
+  index.html
+  assets/
+```
 
-## Active landing pages
+The public URL matches the folder name:
 
-- `/saudi-business-visa/` - Saudi Business Visa
-- `/Saudi%20Business%20Visa/` - Saudi Business Visa original build
-- `/saudi-business-setup/` - Saudi Business Setup
-- `/book-keeping-ksa/` - Bookkeeping & ZATCA Compliance
-- `/test-landing-page/` - Saudization Radar 2026
+```text
+https://lp.tascoutsourcing.sa/page-folder/
+```
 
-## Root page
+## Live Landing Pages
 
-The root `index.html` is a TASC-branded directory for active landing pages only.
+- `book-keeping-ksa/` -> Bookkeeping & ZATCA Compliance
+- `defence/` -> Defence & Aerospace Workforce Intelligence
+- `ksa-mining/` -> KSA Mining Playbook
+- `overview/` -> Landing Page Overview
+- `saudi-business-setup/` -> Saudi Business Setup
+- `saudi-business-visa/` -> Saudi Business Visa
+- `saudi-retail/` -> Saudi Retail Execution Governance
+- `saudization/` -> Saudization Strategy
+- `test-landing-page/` -> Saudization Radar 2026
 
-## Add a new landing page
+## Root Files
 
-1. Create a new folder at the project root, for example `retail`.
-2. Add an `index.html` inside that folder.
-3. Commit and push to `main`.
-4. Vercel will redeploy the site automatically.
+- `index.html` is the landing-page hub.
+- `vercel.json` tells Vercel how to serve each folder URL.
+- `.vercelignore` keeps drafts, exports, and junk out of deployments.
+- `.gitignore` keeps local machine files out of Git.
+- `START_HERE_LIVE_PAGES.md` is the quick editing guide.
 
-The page will be available at:
+## Rules
 
-`lp.tascoutsourcing.sa/retail/`
+- Keep only live pages as root folders.
+- Keep each page's assets inside that page's own `assets/` folder.
+- Do not add source exports, drafts, old builds, zip files, or `node_modules` to the root.
+- If a page is not live, keep it outside this repo or ask before adding it.
+- Every page should have a unique `<title>` and `<meta name="description">`.
 
-## SEO rule
+## Add A New Live Page
 
-Every landing page should include:
+1. Create a new folder at the root, for example `new-campaign/`.
+2. Add `new-campaign/index.html`.
+3. Put page images, CSS, and JS in `new-campaign/assets/`.
+4. Add the route to `vercel.json`.
+5. Add the page to the root `index.html` hub.
+6. Commit and push to `main`.
 
-- A unique `<title>`
-- A unique `<meta name="description">`
-
-## Notes
-
-- Old sample landing pages have been removed from the active repo.
-- GitHub repo: `tasc-outsourcing/tasc-ksa-lp`
-- Vercel project: `tasc-marketing/tasc-ksa-landing-pages`
+Vercel redeploys the site automatically after changes are pushed.

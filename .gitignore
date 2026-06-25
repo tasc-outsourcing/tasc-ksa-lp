@@ -1,7 +1,7 @@
 # dependencies
 node_modules/
 
-# build output (keep root /assets if you want it tracked)
+# build output
 dist/
 
 # archives
