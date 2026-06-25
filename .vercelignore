@@ -1,0 +1,7 @@
+_source-exports/
+_in-progress/
+_legacy/
+**/node_modules/
+**/dist/
+*.zip
+.DS_Store

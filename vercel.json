@@ -6,5 +6,79 @@
       "src": "**/*",
       "use": "@vercel/static"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/saudi-business-visa",
+      "destination": "/saudi-business-visa/index.html"
+    },
+    {
+      "source": "/saudi-business-visa/",
+      "destination": "/saudi-business-visa/index.html"
+    },
+    {
+      "source": "/book-keeping-ksa",
+      "destination": "/book-keeping-ksa/index.html"
+    },
+    {
+      "source": "/book-keeping-ksa/",
+      "destination": "/book-keeping-ksa/index.html"
+    },
+    {
+      "source": "/saudization",
+      "destination": "/saudization/index.html"
+    },
+    {
+      "source": "/saudization/",
+      "destination": "/saudization/index.html"
+    },
+    {
+      "source": "/saudi-retail",
+      "destination": "/saudi-retail/index.html"
+    },
+    {
+      "source": "/saudi-retail/",
+      "destination": "/saudi-retail/index.html"
+    },
+    {
+      "source": "/defence",
+      "destination": "/defence/index.html"
+    },
+    {
+      "source": "/defence/",
+      "destination": "/defence/index.html"
+    },
+    {
+      "source": "/test-landing-page",
+      "destination": "/test-landing-page/index.html"
+    },
+    {
+      "source": "/test-landing-page/",
+      "destination": "/test-landing-page/index.html"
+    },
+    {
+      "source": "/overview",
+      "destination": "/overview/index.html"
+    },
+    {
+      "source": "/overview/",
+      "destination": "/overview/index.html"
+    },
+    {
+      "source": "/saudi-business-setup",
+      "destination": "/saudi-business-setup/index.html"
+    },
+    {
+      "source": "/saudi-business-setup/",
+      "destination": "/saudi-business-setup/index.html"
+    },
+    {
+      "source": "/ksa-mining",
+      "destination": "/ksa-mining/index.html"
+    },
+    {
+      "source": "/ksa-mining/",
+      "destination": "/ksa-mining/index.html"
+    }
   ]
 }
