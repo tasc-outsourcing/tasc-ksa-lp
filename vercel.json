@@ -9,6 +9,14 @@
   ],
   "rewrites": [
     {
+      "source": "/grc-ksa",
+      "destination": "/grc-ksa/index.html"
+    },
+    {
+      "source": "/grc-ksa/",
+      "destination": "/grc-ksa/index.html"
+    },
+    {
       "source": "/saudi-business-visa",
       "destination": "/saudi-business-visa/index.html"
     },
