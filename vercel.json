@@ -95,6 +95,14 @@
     {
       "source": "/ksa-mining-intelligence-hub-en/",
       "destination": "/ksa-mining-intelligence-hub-en/index.html"
+    },
+    {
+      "source": "/ksa-mining-intelligence-hub-ar",
+      "destination": "/ksa-mining-intelligence-hub-ar/index.html"
+    },
+    {
+      "source": "/ksa-mining-intelligence-hub-ar/",
+      "destination": "/ksa-mining-intelligence-hub-ar/index.html"
     }
   ]
 }
