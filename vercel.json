@@ -87,6 +87,14 @@
     {
       "source": "/ksa-mining/",
       "destination": "/ksa-mining/index.html"
+    },
+    {
+      "source": "/ksa-mining-intelligence-hub-en",
+      "destination": "/ksa-mining-intelligence-hub-en/index.html"
+    },
+    {
+      "source": "/ksa-mining-intelligence-hub-en/",
+      "destination": "/ksa-mining-intelligence-hub-en/index.html"
     }
   ]
 }
