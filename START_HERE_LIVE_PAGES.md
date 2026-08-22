@@ -17,13 +17,16 @@ If they want to create a new page, first check whether the requested new page fo
 
 - `book-keeping-ksa/`
 - `defence/`
-- `ksa-mining/`
 - `overview/`
 - `saudi-business-setup/`
 - `saudi-business-visa/`
 - `saudi-retail/`
 - `saudization/`
 - `test-landing-page/`
+
+## Archived Pages
+
+- `_legacy/ksa-mining/` (not deployed)
 
 Each page folder should contain its own `index.html` and, when needed, its own `assets/` folder.
 

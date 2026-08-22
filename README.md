@@ -26,13 +26,16 @@ https://lp.tascoutsourcing.sa/saudi-tax-guide/
 
 - `book-keeping-ksa/` -> Bookkeeping & ZATCA Compliance
 - `defence/` -> Defence & Aerospace Workforce Intelligence
-- `ksa-mining/` -> KSA Mining Playbook
 - `overview/` -> Landing Page Overview
 - `saudi-business-setup/` -> Saudi Business Setup
 - `saudi-business-visa/` -> Saudi Business Visa
 - `saudi-retail/` -> Saudi Retail Execution Governance
 - `saudization/` -> Saudization Strategy
 - `test-landing-page/` -> Saudization Radar 2026
+
+## Archived Landing Pages
+
+- `_legacy/ksa-mining/` -> KSA Mining Playbook (not deployed)
 
 ## Root Files
 
