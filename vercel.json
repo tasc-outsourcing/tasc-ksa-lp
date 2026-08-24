@@ -33,6 +33,14 @@
       "destination": "/book-keeping-ksa/index.html"
     },
     {
+      "source": "/ar/book-keeping-ksa",
+      "destination": "/ar/book-keeping-ksa/index.html"
+    },
+    {
+      "source": "/ar/book-keeping-ksa/",
+      "destination": "/ar/book-keeping-ksa/index.html"
+    },
+    {
       "source": "/saudization",
       "destination": "/saudization/index.html"
     },

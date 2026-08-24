@@ -3,5 +3,6 @@ _in-progress/
 _legacy/
 **/node_modules/
 **/dist/
+book-keeping-ksa-arabic/
 *.zip
 .DS_Store
