@@ -6,3 +6,11 @@ _legacy/
 book-keeping-ksa-arabic/
 *.zip
 .DS_Store
+
+# Enterprise RPO: only reviewed public output is published.
+enterprise-rpo/*
+!enterprise-rpo/*.html
+!enterprise-rpo/assets/
+!enterprise-rpo/assets/**
+!enterprise-rpo/documents/
+!enterprise-rpo/documents/**

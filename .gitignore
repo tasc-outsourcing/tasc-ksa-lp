@@ -16,3 +16,11 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 .env*.local
+
+# Enterprise RPO: only reviewed public output is published.
+enterprise-rpo/*
+!enterprise-rpo/*.html
+!enterprise-rpo/assets/
+!enterprise-rpo/assets/**
+!enterprise-rpo/documents/
+!enterprise-rpo/documents/**

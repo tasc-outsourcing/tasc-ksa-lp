@@ -9,6 +9,14 @@
   ],
   "rewrites": [
     {
+      "source": "/enterprise-rpo",
+      "destination": "/enterprise-rpo/index.html"
+    },
+    {
+      "source": "/enterprise-rpo/",
+      "destination": "/enterprise-rpo/index.html"
+    },
+    {
       "source": "/grc-ksa",
       "destination": "/grc-ksa/index.html"
     },
