@@ -7,15 +7,23 @@ book-keeping-ksa-arabic/
 *.zip
 .DS_Store
 
-# Enterprise RPO: only reviewed public output is published.
-enterprise-rpo/*
-!enterprise-rpo/index.html
-!enterprise-rpo/solutions.html
-!enterprise-rpo/control-tower.html
-!enterprise-rpo/technology.html
-!enterprise-rpo/results.html
-!enterprise-rpo/contact.html
-!enterprise-rpo/assets/
-!enterprise-rpo/assets/**
-!enterprise-rpo/documents/
-!enterprise-rpo/documents/**
+# Enterprise RPO: exclude private inputs explicitly; keep public assets deployable.
+enterprise-rpo/site/
+enterprise-rpo/netlify-upload/
+enterprise-rpo/private-review/
+enterprise-rpo/qa/
+enterprise-rpo/tmp/
+enterprise-rpo/output/
+enterprise-rpo/__pycache__/
+enterprise-rpo/.python-deps/
+enterprise-rpo/TASC-Hotel-Talent-Insight-Pack/
+enterprise-rpo/TASC-RPO-Screenshot-Pack/
+enterprise-rpo/*.py
+enterprise-rpo/*.md
+enterprise-rpo/*.json
+enterprise-rpo/*.pdf
+enterprise-rpo/*.mp4
+enterprise-rpo/*.png
+enterprise-rpo/*.jpg
+enterprise-rpo/*.svg
+enterprise-rpo/rpo-microsite-revised.html
