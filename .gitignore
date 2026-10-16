@@ -19,7 +19,12 @@ yarn-error.log*
 
 # Enterprise RPO: only reviewed public output is published.
 enterprise-rpo/*
-!enterprise-rpo/*.html
+!enterprise-rpo/index.html
+!enterprise-rpo/solutions.html
+!enterprise-rpo/control-tower.html
+!enterprise-rpo/technology.html
+!enterprise-rpo/results.html
+!enterprise-rpo/contact.html
 !enterprise-rpo/assets/
 !enterprise-rpo/assets/**
 !enterprise-rpo/documents/
