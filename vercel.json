@@ -49,6 +49,14 @@
       "destination": "/ar/book-keeping-ksa/index.html"
     },
     {
+      "source": "/ar/saudization-recruitment",
+      "destination": "/ar/saudization-recruitment/index.html"
+    },
+    {
+      "source": "/ar/saudization-recruitment/",
+      "destination": "/ar/saudization-recruitment/index.html"
+    },
+    {
       "source": "/saudization",
       "destination": "/saudization/index.html"
     },
