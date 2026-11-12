@@ -57,6 +57,14 @@
       "destination": "/ar/saudization-recruitment/index.html"
     },
     {
+      "source": "/ar/staffing-services",
+      "destination": "/ar/staffing-services/index.html"
+    },
+    {
+      "source": "/ar/staffing-services/",
+      "destination": "/ar/staffing-services/index.html"
+    },
+    {
       "source": "/saudization",
       "destination": "/saudization/index.html"
     },
