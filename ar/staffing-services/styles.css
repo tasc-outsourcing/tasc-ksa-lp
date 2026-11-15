@@ -197,7 +197,3 @@ p{margin:0 0 1em}
 .compare thead th{background:var(--blue);color:var(--white);font-weight:700}
 .compare tbody th{text-align:start;font-weight:700;background:var(--surface);white-space:nowrap}
 .compare tr:last-child th,.compare tr:last-child td{border-bottom:0}
-.svc-picker{margin-bottom:14px}
-.svc-picker label{display:block;font-size:15px;font-weight:500;margin-bottom:4px}
-.svc-picker select{width:100%;min-height:48px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;font:inherit;font-size:16px;background:var(--white);color:var(--text)}
-.svc-picker select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,95,131,.18)}
