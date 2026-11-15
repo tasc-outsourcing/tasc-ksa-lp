@@ -127,6 +127,22 @@
     {
       "source": "/ksa-mining-intelligence-hub-ar/",
       "destination": "/ksa-mining-intelligence-hub-ar/index.html"
+    },
+    {
+      "source": "/en/thank-you-request-for-proposal",
+      "destination": "/en/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/en/thank-you-request-for-proposal/",
+      "destination": "/en/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/ar/thank-you-request-for-proposal",
+      "destination": "/ar/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/ar/thank-you-request-for-proposal/",
+      "destination": "/ar/thank-you-request-for-proposal/index.html"
     }
   ]
 }
