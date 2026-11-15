@@ -52,9 +52,7 @@
     phone: "يرجى إدخال رقم جوال صحيح.",
     submit: "اطلب عرض توظيف",
     success: "شكراً لك. استلمنا طلبك وسيتواصل معك مختص توظيف قريباً.",
-    failure: "تعذر إرسال الطلب. يرجى المحاولة مرة أخرى أو الاتصال بنا على \u2066+966 11 216 6218\u2069.",
-    picker: "الخدمة المطلوبة*",
-    pickerPrompt: "اختر الخدمة"
+    failure: "تعذر إرسال الطلب. يرجى المحاولة مرة أخرى أو الاتصال بنا على \u2066+966 11 216 6218\u2069."
   };
 
   function setText(el, value) { if (el && el.textContent !== value) el.textContent = value; }
@@ -72,31 +70,8 @@
   function setServiceEverywhere(value) {
     if (VALID.indexOf(value) < 0) return;
     preselect = value;
-    document.querySelectorAll("select.svc-select").forEach(function (sel) {
-      sel.value = value;
-      var form = sel.closest("form");
-      if (form) setHidden(form, value);
-    });
-  }
-
-  function addPicker(form) {
-    if (form.querySelector(".svc-picker")) return;
-    var wrap = document.createElement("div");
-    wrap.className = "svc-picker";
-    var id = "svc-" + Math.random().toString(36).slice(2, 8);
-    var opts = '<option value="">' + COPY.pickerPrompt + "</option>" + SERVICES.map(function (s) {
-      return '<option value="' + s.value + '">' + s.label + "</option>";
-    }).join("");
-    wrap.innerHTML = '<label for="' + id + '">' + COPY.picker + '</label><select id="' + id + '" class="svc-select" required>' + opts + "</select>";
-    form.insertBefore(wrap, form.firstChild);
-    var sel = wrap.querySelector("select");
-    if (preselect) { sel.value = preselect; setHidden(form, preselect); }
-    sel.addEventListener("change", function () {
-      if (sel.value) {
-        setHidden(form, sel.value);
-        window.dataLayer.push({ event: "service_select", service: sel.value, lp: LP });
-      }
-    });
+    document.querySelectorAll("[data-hubspot-form] form").forEach(function (form) { setHidden(form, value); });
+    window.dataLayer.push({ event: "service_select", service: value, lp: LP });
   }
 
   function localise(form) {
@@ -155,7 +130,7 @@
       onFormReady: function ($form) {
         var form = $form && $form.jquery ? $form[0] : $form;
         if (!form) return;
-        addPicker(form);
+        if (preselect) setHidden(form, preselect);
         localise(form);
         fillHidden(form);
         form.addEventListener("focusin", function () {
@@ -166,13 +141,10 @@
       },
       onBeforeFormSubmit: function ($form) {
         var form = $form && $form.jquery ? $form[0] : $form;
-        var sel = form && form.querySelector("select.svc-select");
-        if (form && sel && sel.value) setHidden(form, sel.value);
+        if (form && preselect) setHidden(form, preselect);
       },
       onFormSubmitted: function ($form) {
-        var form = $form && $form.jquery ? $form[0] : $form;
-        var sel = form && form.querySelector ? form.querySelector("select.svc-select") : null;
-        window.dataLayer.push({ event: "form_submit", form_location: target, hubspot_form_id: HUBSPOT.formId, service: sel ? sel.value : (preselect || ""), lp: LP, ad_group: ag || "" });
+        window.dataLayer.push({ event: "form_submit", form_location: target, hubspot_form_id: HUBSPOT.formId, service: preselect || "", lp: LP, ad_group: ag || "" });
       }
     });
   }
