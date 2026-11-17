@@ -32,14 +32,15 @@ body{margin:0;background:#fff}
 .lp-footer{background:#0b2545;color:#cfd8e3;font-size:14px;padding:22px 20px;text-align:center}
 .lp-footer a{color:#fff}
 @media(max-width:600px){.lp-header img{height:36px}.lp-header .lp-cta{padding:8px 14px;font-size:13px}.hero-form{width:100%!important}}
-.ksa-talent-section{background:linear-gradient(90deg,#005f83 0%,#0a7d8c 100%);padding:56px 20px}
-.ksa-talent-wrap{max-width:1140px;margin:0 auto;display:flex;gap:40px;align-items:center;flex-wrap:wrap}
-.ksa-talent-copy{flex:1 1 380px;color:#fff}
-.ksa-talent-badge{display:inline-block;background:rgba(255,255,255,.15);border-radius:20px;padding:6px 14px;font-size:12px;letter-spacing:1px;margin-bottom:14px}
-.ksa-talent-copy h2{color:#fff;font-size:32px;line-height:1.25;margin:0 0 14px}
-.ksa-talent-copy p{color:#e6f2f5;font-size:16px;line-height:1.6;margin:0}
-.ksa-talent-form{flex:1 1 380px;background:#fff;border-radius:8px;padding:25px}
-@media(max-width:600px){.ksa-talent-copy h2{font-size:24px}}
+.cv-btn{display:inline-block;margin-left:12px;padding:10px 26px;border:2px solid #fff;border-radius:40px;color:#fff;background:transparent;font-weight:700;text-decoration:none;cursor:pointer;transition:all .25s}
+.cv-btn:hover{background:#fff;color:#005f83}
+.cv-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:20px}
+.cv-modal.open{display:flex}
+.cv-modal-box{background:#fff;border-radius:8px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:30px 25px 20px;position:relative}
+.cv-modal-box h3{color:#005f83;font-size:22px;margin:0 0 6px}
+.cv-modal-box p{font-size:14px;color:#444;margin:0 0 16px}
+.cv-close{position:absolute;top:10px;right:14px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:#333}
+@media(max-width:600px){.cv-btn{margin:12px 0 0 0}}
 </style>
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20309062.js"></script>
 </head>
@@ -85,6 +86,7 @@ body{margin:0;background:#fff}
                 </p>
 
                 <a href="#hs-form-hero" class="cta-btn js-scroll-form" style="display:inline-block;text-decoration:none">Get In Touch</a>
+                <button type="button" class="cv-btn js-open-cv">Register CV</button>
             </div>
 
             <!-- RIGHT FORM -->
@@ -99,17 +101,6 @@ body{margin:0;background:#fff}
         </div>
     </section>
 
-    <!-- SAUDI NATIONALS (job seekers) -->
-    <section class="ksa-talent-section" id="saudi-nationals">
-        <div class="ksa-talent-wrap">
-            <div class="ksa-talent-copy">
-                <span class="ksa-talent-badge">FOR SAUDI NATIONALS</span>
-                <h2>Looking for Your Next Role in the Private Sector?</h2>
-                <p>TASC partners with leading employers across Saudi Arabia that are hiring Saudi talent in every sector. Share your details and our recruitment team will reach out when a role matches your profile.</p>
-            </div>
-            <div class="ksa-talent-form"><div id="hs-form-talent"></div></div>
-        </div>
-    </section>
     <section class="saudi-section">
         <div class="contaier">
 
@@ -573,6 +564,14 @@ body{margin:0;background:#fff}
 
         </div>
     </section>
+<div class="cv-modal" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+  <div class="cv-modal-box">
+    <button type="button" class="cv-close" aria-label="Close">&times;</button>
+    <h3 id="cv-modal-title">Register Your CV</h3>
+    <p>Saudi nationals: share your details and our recruitment team will reach out when a role matches your profile.</p>
+    <div id="hs-form-talent"></div>
+  </div>
+</div>
 <footer class="lp-footer">&copy; <span id="yr"></span> TASC Outsourcing. All rights reserved. &middot; <a href="https://tascoutsourcing.sa/en/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></footer>
 <script src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
@@ -581,6 +580,12 @@ document.getElementById('yr').textContent=new Date().getFullYear();
   hbspt.forms.create({portalId:"20309062",formId:"bfee5ab8-ab83-4cbf-b2b2-3231e1ea546c",region:"na1",target:t});
 });
 hbspt.forms.create({portalId:"20309062",formId:"6476a5f3-17f7-4295-812c-a1ca68006f3e",region:"na1",target:"#hs-form-talent"});
+var cvm=document.getElementById('cv-modal');
+document.querySelectorAll('.js-open-cv').forEach(function(b){b.addEventListener('click',function(){cvm.classList.add('open');document.body.style.overflow='hidden';});});
+function cvClose(){cvm.classList.remove('open');document.body.style.overflow='';}
+cvm.querySelector('.cv-close').addEventListener('click',cvClose);
+cvm.addEventListener('click',function(e){if(e.target===cvm)cvClose();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cvClose();});
 document.querySelectorAll('.js-scroll-form').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var f=document.querySelector('.hero-form');if(f)f.scrollIntoView({behavior:'smooth',block:'center'});});});
 </script>
 </body>
