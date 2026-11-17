@@ -32,6 +32,38 @@ body{margin:0;background:#fff}
 .lp-footer{background:#0b2545;color:#cfd8e3;font-size:14px;padding:22px 20px;text-align:center}
 .lp-footer a{color:#fff}
 @media(max-width:600px){.lp-header img{height:36px}.lp-header .lp-cta{padding:8px 14px;font-size:13px}.hero-form{width:100%!important}}
+/* HubSpot form styling (all forms on page) */
+.hs-form fieldset{max-width:none!important;margin:0!important;padding:0!important;border:0}
+.hs-form fieldset.form-columns-2{display:flex;gap:12px}
+.hs-form fieldset.form-columns-2 .hs-form-field{width:50%!important;float:none!important;padding:0!important}
+.hs-form fieldset.form-columns-2:has(.hs_phone){flex-direction:column;gap:0}
+.hs-form fieldset.form-columns-2:has(.hs_phone) .hs-form-field{width:100%!important}
+.hs-form .hs-form-field{margin:0 0 12px!important;float:none!important;width:100%}
+.hs-form .hs-form-field[style*="display: none"],.hs-form .hs-form-field:not(:has(.hs-input:not([type=hidden]))){margin:0!important}
+.hs-form .hs-form-field>label{font-size:13px;color:#005f83;font-weight:600;margin:0 0 6px;display:block}
+.hs-form .hs-form-field>label:empty,.hs-form .hs-form-field>label span:empty{display:none}
+.hs-form .input{margin:0!important}
+.hs-form input.hs-input:not([type=checkbox]):not([type=radio]):not([type=file]),.hs-form select.hs-input,.hs-form textarea.hs-input{width:100%!important;max-width:none!important;box-sizing:border-box;height:46px;border:1px solid #c9d6df!important;border-radius:6px!important;background:#f5f8fa!important;padding:0 14px!important;font-size:14px;color:#1d2b36;outline:none;box-shadow:none!important;transition:border-color .2s,background .2s;margin:0!important}
+.hs-form select.hs-input{-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23005f83' stroke-width='1.6' fill='none'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:right 14px center!important;padding-right:36px!important;cursor:pointer}
+.hs-form textarea.hs-input{height:96px;padding:12px 14px!important;resize:vertical}
+.hs-form .hs-input:focus{border-color:#00a6c7!important;background:#fff!important}
+.hs-form .hs-input::placeholder{color:#7a8a96}
+.hs-form .hs-fieldtype-intl-phone.hs-input{display:flex!important;gap:8px;width:100%!important;height:auto!important;border:0!important;background:none!important;padding:0!important}
+.hs-form .hs-fieldtype-intl-phone select{flex:0 0 120px;width:120px!important}
+.hs-form .hs-fieldtype-intl-phone input{flex:1 1 0;min-width:0;width:auto!important;max-width:none!important}
+.hs-form .hs-error-msgs{list-style:none;margin:4px 0 0;padding:0}
+.hs-form .hs-error-msg,.hs-form .hs-error-msgs label{color:#d9372b;font-size:12px}
+.hs-form .hs-input.invalid.error{border-color:#d9372b!important}
+.hs-form .legal-consent-container{font-size:12px;color:#555}
+.hs-form .hs_submit{margin:6px 0 0!important}
+.hs-form .hs_submit .actions{margin:0!important;padding:0!important}
+.hs-form input.hs-button{width:100%;height:48px!important;margin:0!important;padding:0 20px!important;line-height:48px;border:0!important;border-radius:40px!important;background:linear-gradient(90deg,#00a6c7 0%,#5fd068 100%)!important;color:#fff!important;font-size:16px;font-weight:700;letter-spacing:.3px;cursor:pointer;box-shadow:none!important;transition:opacity .2s,transform .2s}
+.hs-form input.hs-button:hover{opacity:.92;transform:translateY(-1px)}
+.hs-form .hs-richtext{font-size:12px;color:#555}
+.hs-form .hs-recaptcha{margin:0}
+.hs-form-hero-wrap{width:100%}
+.hero-form h3{margin-bottom:18px}
+.hs-form .hs_file_upload input[type=file]{font-size:13px}
 .cv-btn{display:inline-block;margin-left:12px;padding:10px 26px;border:2px solid #fff;border-radius:40px;color:#fff;background:transparent;font-weight:700;text-decoration:none;cursor:pointer;transition:all .25s}
 .cv-btn:hover{background:#fff;color:#005f83}
 .cv-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:20px}
@@ -91,7 +123,7 @@ body{margin:0;background:#fff}
 
             <!-- RIGHT FORM -->
             <div class="hero-form">
-                <h3>REQUEST A CALL BACK!</h3>
+                <h3>REQUEST A CALL BACK</h3>
 
                 <div id="hs-form-hero"></div>
 
