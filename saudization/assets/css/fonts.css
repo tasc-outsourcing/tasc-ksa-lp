@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Gotham Ultra';
+    src: url('fonts/Gotham-Ultra.eot');
+    src: url('fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Ultra.woff2') format('woff2'),
+        url('fonts/Gotham-Ultra.woff') format('woff'),
+        url('fonts/Gotham-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Light.eot');
+    src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Light.woff2') format('woff2'),
+        url('fonts/Gotham-Light.woff') format('woff'),
+        url('fonts/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Thin.eot');
+    src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Thin.woff2') format('woff2'),
+        url('fonts/Gotham-Thin.woff') format('woff'),
+        url('fonts/Gotham-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Black.eot');
+    src: url('fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Black.woff2') format('woff2'),
+        url('fonts/Gotham-Black.woff') format('woff'),
+        url('fonts/Gotham-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Book.eot');
+    src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Book.woff2') format('woff2'),
+        url('fonts/Gotham-Book.woff') format('woff'),
+        url('fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
