@@ -32,6 +32,14 @@ body{margin:0;background:#fff}
 .lp-footer{background:#0b2545;color:#cfd8e3;font-size:14px;padding:22px 20px;text-align:center}
 .lp-footer a{color:#fff}
 @media(max-width:600px){.lp-header img{height:36px}.lp-header .lp-cta{padding:8px 14px;font-size:13px}.hero-form{width:100%!important}}
+.ksa-talent-section{background:linear-gradient(90deg,#005f83 0%,#0a7d8c 100%);padding:56px 20px}
+.ksa-talent-wrap{max-width:1140px;margin:0 auto;display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.ksa-talent-copy{flex:1 1 380px;color:#fff}
+.ksa-talent-badge{display:inline-block;background:rgba(255,255,255,.15);border-radius:20px;padding:6px 14px;font-size:12px;letter-spacing:1px;margin-bottom:14px}
+.ksa-talent-copy h2{color:#fff;font-size:32px;line-height:1.25;margin:0 0 14px}
+.ksa-talent-copy p{color:#e6f2f5;font-size:16px;line-height:1.6;margin:0}
+.ksa-talent-form{flex:1 1 380px;background:#fff;border-radius:8px;padding:25px}
+@media(max-width:600px){.ksa-talent-copy h2{font-size:24px}}
 </style>
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20309062.js"></script>
 </head>
@@ -88,6 +96,18 @@ body{margin:0;background:#fff}
 
             </div>
 
+        </div>
+    </section>
+
+    <!-- SAUDI NATIONALS (job seekers) -->
+    <section class="ksa-talent-section" id="saudi-nationals">
+        <div class="ksa-talent-wrap">
+            <div class="ksa-talent-copy">
+                <span class="ksa-talent-badge">FOR SAUDI NATIONALS</span>
+                <h2>Looking for Your Next Role in the Private Sector?</h2>
+                <p>TASC partners with leading employers across Saudi Arabia that are hiring Saudi talent in every sector. Share your details and our recruitment team will reach out when a role matches your profile.</p>
+            </div>
+            <div class="ksa-talent-form"><div id="hs-form-talent"></div></div>
         </div>
     </section>
     <section class="saudi-section">
@@ -560,6 +580,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 ['#hs-form-hero','#hs-form-contact'].forEach(function(t){
   hbspt.forms.create({portalId:"20309062",formId:"bfee5ab8-ab83-4cbf-b2b2-3231e1ea546c",region:"na1",target:t});
 });
+hbspt.forms.create({portalId:"20309062",formId:"6476a5f3-17f7-4295-812c-a1ca68006f3e",region:"na1",target:"#hs-form-talent"});
 document.querySelectorAll('.js-scroll-form').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var f=document.querySelector('.hero-form');if(f)f.scrollIntoView({behavior:'smooth',block:'center'});});});
 </script>
 </body>
