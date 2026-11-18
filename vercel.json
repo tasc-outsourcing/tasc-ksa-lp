@@ -159,6 +159,17 @@
     {
       "source": "/perm-recruitment-agency/",
       "destination": "/perm-recruitment-agency/index.html"
+    },
+    {
+      "source": "/recruitment-process-outsourcing/",
+      "destination": "/recruitment-process-outsourcing/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/recruitment-process-outsourcing",
+      "destination": "/recruitment-process-outsourcing/",
+      "permanent": false
     }
   ]
 }
