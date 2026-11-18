@@ -143,6 +143,14 @@
     {
       "source": "/ar/thank-you-request-for-proposal/",
       "destination": "/ar/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/recruitment-agency",
+      "destination": "/recruitment-agency/index.html"
+    },
+    {
+      "source": "/recruitment-agency/",
+      "destination": "/recruitment-agency/index.html"
     }
   ]
 }
