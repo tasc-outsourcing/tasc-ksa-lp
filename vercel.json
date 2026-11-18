@@ -151,6 +151,14 @@
     {
       "source": "/recruitment-agency/",
       "destination": "/recruitment-agency/index.html"
+    },
+    {
+      "source": "/perm-recruitment-agency",
+      "destination": "/perm-recruitment-agency/index.html"
+    },
+    {
+      "source": "/perm-recruitment-agency/",
+      "destination": "/perm-recruitment-agency/index.html"
     }
   ]
 }

@@ -1,0 +1,1633 @@
+.damam-form-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+}
+.damam-form-section::after {
+  position: absolute;
+  content: "";
+  background: url('../img/dam-form-shape.png') no-repeat;
+  background-size: contain;
+  right: 0px;
+  bottom: -170px;
+  z-index: -1;
+  max-width: 389px;
+  max-height: 569px;
+  width: 100%;
+  height: 100%;
+}
+.dam-form-heading {
+  color: #005f83;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 54px;
+  margin-bottom: 35px;
+  /* max-width: 485px; */
+  font-family: 'Gotham';
+  margin-top: 0;
+  position: relative;
+  letter-spacing: normal;
+}
+.dam-form-heading::after {
+  position: absolute;
+  content: "";
+  background: url('../img/form-heading-shape.png') no-repeat;
+  background-size: contain;
+  right: 25px;
+  bottom: -10px;
+  z-index: -1;
+  max-width: 64px;
+  max-height: 73px;
+  width: 100%;
+  height: 100%;
+}
+.dam-form-content p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #005f83cc;
+  font-family: 'Gotham book';
+}
+.dam-row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.dam-colm-1 {
+  flex: 0 0 58%;
+  max-width: 58%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.dam-colm-2 {
+  flex: 0 0 42%;
+  max-width: 42%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.breadcrumb-hyperlink a {
+  color: #989898;
+  text-decoration: none;
+  pointer-events: none;
+}
+.breadcrumb-hyperlink span {
+  color: #989898;
+  margin: 6px;
+}
+.breadcrumb-hyperlink {
+  font-family: 'Gotham book';
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+  z-index: 3;
+}
+.breadcrumb-hyperlink::after {
+  position: absolute;
+  content: "";
+  background: url('../img/breadcrumb-shape.png') no-repeat;
+  background-size: contain;
+  right: 27px;
+  bottom: -37px;
+  z-index: -1;
+  width: 35px;
+  height: 37px;
+}
+.breadcrumb-hyperlink a {
+  color: #989898;
+  text-decoration: none;
+  pointer-events: none;
+}
+section.damam-breadcrumb {
+  padding-top: 40px;
+}
+
+
+
+
+
+.reach-row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+}
+.reach-colm-1 {
+  flex: 0 0 45%;
+  max-width: 45%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.reach-colm-2 {
+  flex: 0 0 55%;
+  max-width:55%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+section.reach-form-section {
+  background: #F2F7F9;
+  padding: 60px 0;
+  z-index: 1;
+  position: relative;
+}
+section.reach-form-section::after {
+  position: absolute;
+  content: "";
+  background: url('../img/rp-after.png') no-repeat;
+  background-size: contain;
+  right: 170px;
+  top: -40px;
+  z-index: -1;
+  max-width: 117px;
+  max-height: 111px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(246deg);
+}
+.reach-form-heading {
+  color: #005f83;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 54px;
+  margin-bottom: 27px;
+  font-family: 'Gotham';
+  margin-top: 0;
+  position: relative;
+}
+.reach-form-content p {
+  font-size: 22px;
+  line-height: 37px;
+  color: #005f83;
+  font-family: 'Gotham book';
+  max-width: 525px;
+}
+
+
+
+
+/* corporate section start */
+.intro_section {
+   background: #005F83;
+   padding: 100px 0;
+   position: relative;
+   z-index: 1;
+}
+.intro_section:before {
+  position: absolute;
+  content: "";
+  background: url('../img/apr_shape_1.png') no-repeat;
+  background-size: contain;
+  left: 78px;
+  top: -1px;
+  z-index: 0;
+  max-width: 377px;
+  max-height: 110px;
+  width: 100%;
+  height: 100%;
+}
+.intro_section:after {
+  position: absolute;
+  content: "";
+  background: url('../img/apr_shape_2.png') no-repeat;
+  background-size: contain;
+  right: 75px;
+  bottom: -10px;
+  z-index: 0;
+  max-width: 369px;
+  max-height: 110px;
+  width: 100%;
+  height: 100%;
+}
+.dam-corp_heading h3 {
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 900;
+  color: #fff;
+  font-family: 'Gotham';
+}
+.dam-corp_pera p {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Gotham book';
+  color: #fff;
+}
+.dam-corp_heading h3 span {
+   -webkit-text-fill-color: transparent;
+   background-size: 100%;
+   -webkit-background-clip: text;
+   background-clip: text;
+}
+
+.require-uk-cnt_width {
+   max-width: 920px;
+   text-align: center;
+   margin: auto;
+   color: #fff;
+}
+.uk-net_1 {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+}
+.uk-net_2 {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+}
+/* corporate section end */
+
+
+.dam_approach_boxes_section {
+  text-align: center;
+  margin-top: 55px;
+  position: relative;
+}
+.dam_approach_boxes_section:after {
+  position: absolute;
+  content: "";
+  background: url('../img/apr-sft.png') no-repeat;
+  background-size: contain;
+  left: 250px;
+  bottom: -65px;
+  z-index: 0;
+  max-width: 175px;
+  max-height: 76px;
+  width: 100%;
+  height: 100%;
+}
+.approach_box {
+  background: #fff;
+  position: relative;
+  padding: 20px 25px;
+  display: inline-block;
+  width: calc(50% - 30px);
+  margin: 10px;
+  text-align: left;
+  vertical-align: top;
+  min-height: 310px;
+  z-index: 1;
+  border-radius: 2px;
+}
+.approach_box:before {
+  position: absolute;
+  content: "";
+  background: url('../img/apr_shape.png') center center no-repeat;
+  background-size: contain;
+  right: 20px;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 115px;
+  transform: rotate(260deg);
+}
+.approach_box h4 {
+  font-size: 24px;
+  color: #005f83;
+  margin: 20px 0 10px;
+  font-weight: 800;
+  font-family: 'Gotham';
+  line-height: 32px;
+}
+h2.apr_numbering {
+   position: relative;
+   margin: 0;
+   background: linear-gradient(30deg,#45db33,#00bfff);
+   display: flex;
+   padding: 15px;
+   font-size: 36px;
+   color: #fff;
+   border-radius: 100%;
+   /* width: 30px;
+   height: 30px; */
+   width: 65px;
+   height: 65px;
+   align-items: center;
+   justify-content: center;
+   /* z-index: 1; */
+   font-weight: 700;
+}
+h2.apr_numbering:before {
+   position: absolute;
+   content: "";
+   /* width: 30px;
+   height: 30px; */
+   width: 65px;
+   height: 65px;
+   border-radius: 100%;
+   border: 2px solid #24ce94;
+   padding: 15px;
+   left: -6px;
+   top: -5px;
+   z-index: -1;
+}
+h2.apr_numbering:after {
+   position: absolute;
+   content: "";
+   /* width: 30px;
+   height: 30px; */
+   width: 65px;
+   height: 65px;
+   border-radius: 100%;
+   border: 2px solid #24ce94;
+   padding: 15px;
+   right: -5px;
+   bottom: -4px;
+   z-index: -1;
+}
+.approach_box p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 5px;
+  font-family: 'Gotham book';
+  color: #005f83;
+}
+
+section.dam-payroll-benefit-section {
+  padding: 70px 0;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.dam-payroll-benefit-section:after {
+  position: absolute;
+  content: "";
+  background: url('../img/rp-after.png') center center no-repeat;
+  background-size: contain;
+  left: 70px;
+  bottom: 110px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 117px;
+  max-height: 111px;
+}
+.pbs-heading {
+  text-align: center;
+  font-family: 'Gotham';
+}
+.dam_partner_box_section {
+  text-align: center;
+  margin-top: 50px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  color: #005f83;
+}
+.req-partner_heading.pbs-heading p {
+  font-size: 22px;
+  line-height: 32px;
+  color: #005f83;
+  font-family: 'Gotham book';
+  max-width: 1050px;
+  margin: auto;
+}
+.dam_partner_box_section {
+  text-align: center;
+}
+.dam_partner_box {
+  display: inline-block;
+  margin: 15px;
+  vertical-align: top;
+}
+.pbs-box-section .dam_partner_box {
+  background: linear-gradient(0deg, #00bfff, #45db33);
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  min-height: auto;
+  width: calc(33% - 30px );
+}
+.pbs_box {
+  background: #fff;
+  border-radius: 6px;
+  padding: 35px 40px;
+}
+
+.benif_img {
+  margin-bottom: 20px;
+}
+.pbs_box .benif_img {
+  background: linear-gradient(-132deg, #00bfff, #45db33);
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.pbs-box-section .dam_partner_box h6 {
+  font-size: 24px;
+  line-height: 36px;
+  min-height: auto;
+      margin-top: 0;
+  margin-bottom: 15px;
+      color: #005f83;
+      font-family: 'Gotham';
+      font-weight: 800;
+}
+.dam_partner_box p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #005f83d9;
+  font-family: 'Gotham book';
+}
+.dam_partner_box p a {
+  color: #005f83;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+
+section.require-agency {
+  padding: 70px 0;
+  background: #F2F7F9;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.require-agency:before {
+  position: absolute;
+  content: "";
+  background: url('../img/smart-before.png') center bottom no-repeat;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  bottom: 90px;
+}
+.require-agency .require-uk-cnt_width {
+  max-width: 890px;
+  position: relative;
+  z-index: 1;
+}
+.require-agency .dam-corp_heading h3 {
+  font-size: 40px;
+  max-width: 850px;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 35px;
+}
+.dam-corp_heading h3 span {
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.same_grad {
+  background: linear-gradient(248deg, #45db33, #00bfff);
+}
+.req-pm-partner-pera p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #005f83cc;
+  font-family: 'Gotham book';
+}
+.req-partner_colm {
+  margin-top: 50px;
+}
+.req-partner_colm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.require-agency .req-partner_im {
+  max-width: 500px;
+  margin: auto;
+}
+.req-partner_im img {
+  max-width: 100%;
+}
+.req-partner_colm .req-partner_heading {
+  max-width: 570px;
+  padding-right: 50px;
+}
+.pm-column-content h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #005f83;
+  margin-top: 0;
+  font-family: 'Gotham';
+}
+.pm-column-content p, .pm-column-content ul li {
+  font-size: 16px;
+  line-height: 32px;
+  color: #005f83cc;
+  font-weight: 400;
+  font-family: 'Gotham book';
+}
+.choice-other-pera {
+  max-width: 940px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.choice-other-pera p {
+  font-size: 16px;
+  line-height: 32px;
+  /* color: #303030d9; */
+  font-weight: 400;
+  font-family: 'Gotham book';
+}
+.choice-bg-pera {
+  background: linear-gradient(270deg, #45db33, #00bfff);
+  padding: 35px 30px;
+  border-radius: 10px;
+  max-width: 940px;
+  margin: auto;
+  text-align: center;
+}
+.choice-bg-pera p {
+  font-size: 22px;
+  color: #ffffffe0;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: 'Gotham';
+  margin: auto;
+}
+
+
+section.ra-solution-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+.ra-solution-heading h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 0;
+  color: #005887;
+  font-family: 'Gotham';
+}
+.ra-solution-grid {
+  text-align: center;
+}
+.ra-solution-box {
+  max-width: calc(33% - 33px);
+  display: inline-block;
+  padding: 30px 30px 40px;
+  margin: 15px;
+  vertical-align: top;
+  border-radius: 25px;
+  box-shadow: 0 4px 2px 0px #005F83;
+  text-align: center;
+  position: relative;
+}
+.ra-solution-box h4 {
+  font-size: 23px;
+  font-weight: 800;
+  color: #005887;
+  font-family: 'Gotham';
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.ra-solution-box p {
+  font-size: 14px;
+  color: #005887;
+  line-height: 20px;
+  font-family: 'Gotham book';
+  margin-bottom: 25px;
+}
+.ra-solution-box a {
+      font-weight: 800;
+  color: #005887;
+  text-decoration: none;
+  font-family: 'Gotham';
+  font-size: 17px;
+}
+.reach-form {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+  border-top: 0;
+  max-width: 390px;
+}
+.ra-solution-text {
+  min-height: 205px;
+}
+/* riyadh css */
+.damam-form-section.riyadh-form-section:after {
+  display: none;
+}
+.require-agency.riyadh-pr-section:before {
+  display: none;
+}
+.require-agency.riyadh-pr-section .req-partner_colm {
+  margin-top: 30px;
+}
+.riyadh-form-section .dam-form-heading::after {
+  display: none;
+}
+.riyadh-form-section .dam-form-content {
+  position: relative;
+  z-index: 1;
+}
+.riyadh-form-section .dam-form-content::before {
+  position: absolute;
+  content: "";
+  background: url('../img/ry-banner-content-shape.png') no-repeat;
+  background-size: contain;
+  left: -45px;
+  bottom: 150px;
+  z-index: -1;
+  max-width: 45px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+}
+/* .riyadh-form-section .dam-form-content p {
+  color: #000000;
+}
+.riyadh-pr-section .req-pm-partner-pera p,
+.riyadh-pr-section .pm-column-content li {
+  color: rgb(48 48 48 / 85%);
+} */
+.riyadh-pr-section .req-partner_colm .req-partner_heading {
+  max-width: 510px;
+  width: 100%;
+}
+.riyadh-pr-section .require-uk-cnt_width {
+  max-width: 1090px;
+}
+.riyadh-pr-section .dam-corp_heading h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .riyadh-formula .req-pm-partner-pera p {
+  color: #303030d9;
+}
+.riyadh-formula .pm-column-content p, .riyadh-formula .pm-column-content ul li {
+  color: #303030d9;
+}
+.riyadh-formula .choice-other-pera p {
+  color: #303030d9;
+}
+.riyadh-services .ra-solution-box p {
+  color: #303030;
+} */
+.riyadh-firm .dam-corp_pera h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Gotham';
+  color: #fff;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.riyadh-firm  .require-uk-cnt_width {
+  max-width: 960px;
+}
+.riyadh-formula .require-uk-cnt_width {
+  max-width: 1050px;
+}
+.riyadh-formula .dam-corp_heading h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .riyadh-firm .approach_box p {
+  color: #303030d9;
+} */
+.riyadh-firm .approach_box {
+  min-height: 340px;
+}
+.firm-riyadh-pera {
+  max-width: 730px;
+  margin: auto;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 20px;
+  font-family: 'Gotham';
+  text-align: center;
+  padding-top: 80px;
+}
+.firm-riyadh-pera p {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'Gotham book';
+}
+.riyadh-conversation-section {
+  padding: 80px 0;
+  text-align: center;
+}
+.conversation-content h3 {
+  margin-top: 0;
+  font-size: 30px;
+  color: #005f83;
+  font-weight: 800;
+  font-family: 'Gotham';
+}
+
+.conversation-content p {
+  font-size: 16px;
+  line-height: 32px;
+  /* color: #303030d9; */
+  max-width: 1020px;
+  margin: auto;
+  font-family: 'Gotham book';
+}
+.riyadh-firm .dam_approach_boxes_section {
+  margin-top: 40px;
+}
+.ry-solution-text {
+  min-height: 230px;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(2) {
+  width: 100%;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(3) select#phone_ext-06baed06-e0b9-4d77-8397-fb7b3613e72d {
+  width: 28% !important;
+  float: left;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(3) input#phone-06baed06-e0b9-4d77-8397-fb7b3613e72d {
+  float: right;
+  width: 70% !important;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(4) .hs_company.hs-company.hs-fieldtype-text.field.hs-form-field {
+  width: 100% !important;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(3) .hs-input.hs-fieldtype-intl-phone {
+  width: 100%;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(1) .hs_firstname.hs-firstname.hs-fieldtype-text.field.hs-form-field {
+  width: 49%;
+  float: left;
+}
+.dam-form #hsForm_06baed06-e0b9-4d77-8397-fb7b3613e72d > fieldset:nth-child(1) .hs_lastname.hs-lastname.hs-fieldtype-text.field.hs-form-field {
+  float: right;
+  width: 49%;
+}
+
+
+/* pr page start*/
+.require-discover-section .req-partner_colm .req-partner_heading {
+  max-width: 635px;
+}
+section.require-discover-section {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+section.require-agency.pr-aproach-section {
+  background: #fff;
+}
+ .riyadh-formula.pr-aproach-section .dam-corp_heading h3 {
+  color: #005f83;
+}
+section.require-agency.pr-company-section:before {
+  display: none;
+}
+.pr-aproach-section .req-partner_heading {
+  width: 100%;
+  max-width: 638px;
+}
+.pr-aproach-section  .req-partner_im img {
+  max-height: 360px;
+}
+section.require-agency.pr-aproach-section:before {
+  display: none;
+}
+.riyadh-firm.prf-section .approach_box {
+  min-height: 370px;
+}
+.pfc-text p {
+  font-size: 24px;
+  line-height: 42px;
+  color: #005f83;
+  font-family: 'Gotham';
+  font-weight: 600;
+  margin-top: 20px;
+}
+.partner-form-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.partner-form-content {
+  width: 60%;
+  float: left;
+  padding: 15px;
+}
+
+.partner-form-form {
+  width: 40%;
+  float: left;
+  padding: 15px;
+}
+
+/* pr page end*/
+
+
+/* khobar page  */
+.khobar-require-agency:before {
+  background: url('../img/hiring-bg.svg') center right no-repeat;
+}
+.intro_section.khobar-approach-section:before {
+  background: url('../img/pseudo-shape.svg') no-repeat;
+  left: 0;
+  top: -1px;
+}
+.intro_section.khobar-approach-section:after {
+  background: url('../img/pseudo-shape-2.svg') no-repeat;
+  right: 0;
+  bottom: -1px;
+  
+}
+.khobar-approach-pera p {
+  color: #fff;
+  max-width: 730px;
+  margin: auto;
+  line-height: 28px;
+  text-align: center;
+}
+
+.khobar-approach-pera {
+  margin-top: 70px;
+}
+.khobar-why-choose-pera p {
+  font-size: 16px;
+  line-height: 32.5px;
+  text-align: center;
+  max-width: 910px;
+  margin: auto;
+}
+
+.khobar-why-choose-pera {
+  margin-top: 40px;
+}
+.khobar-approach-section .approach_box {
+  min-height: 340px;
+}
+.khobar-approach-section.jubil-box-size .approach_box {
+  min-height: 400px;
+}
+.jubil-trs-section .ra-solution-box h4 {
+  min-height: 65px;
+}
+.khobar-pbx-box .pbs_box {
+  min-height: 530px;   
+   padding: 35px 27px;
+}
+@media (max-width:1600px){
+  .intro_section:before {
+      max-height: 90px;
+ }
+  .intro_section:after {
+      max-width: 302px;
+      max-height: 90px;
+ }
+ .req-partner_heading.pbs-heading p {
+ font-size: 20px;
+ line-height: 30px;
+}
+.dam-form-heading {
+ font-size: 40px;
+ line-height: 50px;
+ margin-bottom: 30px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 38px;
+ line-height: 46px;
+ margin-bottom: 30px;
+}
+.req-partner_colm {
+ margin-top: 40px;
+}
+.ra-solution-heading h3 {
+ font-size: 38px;
+}
+.dam-corp_heading h3 {
+ font-size: 38px;
+}
+.approach_box h4 {
+ font-size: 23px;
+}
+.approach_box {
+ min-height: 310px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 38px;
+}
+.pbs-box-section .dam_partner_box h6 {
+ font-size: 22px;
+ line-height: 32px;
+}
+.reach-form-heading {
+ font-size: 36px;
+ line-height: 46px;
+}
+.reach-form-content p {
+ font-size: 20px;
+ line-height: 34px;
+}
+}
+@media (max-width:1399px){
+  .intro_section:before {
+      max-height: 80px;
+ }
+  .intro_section:after {
+      max-width: 268px;
+      max-height: 80px;
+ }
+
+  .intro_section {
+      padding: 90px 0;
+ }
+ 
+  .dam-corp_heading h3 {
+      font-size: 38px;
+ }
+ .damam-form-section::after {
+ max-width: 300px;
+ max-height: 480px;
+}
+.dam-form-heading {
+ font-size: 38px;
+ line-height: 46px;
+}
+.damam-form-section {
+ padding-bottom: 60px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 36px;
+ line-height: 44px;
+}
+.req-partner_colm {
+ margin-top: 30px;
+}
+.pm-column-content h3 {
+ font-size: 28px;
+}
+.ra-solution-heading h3 {
+ font-size: 36px;
+}
+.ra-solution-box h4 {
+ font-size: 22px;
+}
+.dam-corp_heading h3 {
+ font-size: 36px;
+}
+.approach_box h4 {
+ font-size: 22px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 36px;
+}
+.pbs-box-section .dam_partner_box h6 {
+ font-size: 20px;
+ line-height: 27px;
+}
+.dam_partner_box p {
+ line-height: 30px;
+}
+.reach-form-heading {
+ font-size: 34px;
+ line-height: 44px;
+ margin-bottom: 20px;
+}
+}
+@media (max-width:1269px){
+  .riyadh-firm .approach_box {
+    min-height: 370px;
+}
+}
+@media (max-width:1199px){
+  .dam-corp_heading h3 {
+      font-size: 36px;
+ }
+  .intro_section {
+      padding: 85px 0;
+ }
+ .dam-form-heading {
+ font-size: 36px;
+ line-height: 44px;
+}
+.damam-form-section {
+ padding-top: 65px;
+ padding-bottom: 50px;
+}
+.damam-form-section::after {
+ max-width: 250px;
+ max-height: 420px;
+}
+section.require-agency {
+ padding: 60px 0;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 34px;
+ line-height: 42px;
+ margin-bottom: 20px;
+}
+.pm-column-content h3 {
+ font-size: 26px;
+ line-height: 32px;
+}
+section.ra-solution-section {
+ padding-top: 60px;
+ padding-bottom: 60px;
+}
+.dam-corp_heading h3 {
+ font-size: 34px;
+}
+.approach_box h4 {
+ font-size: 20px;
+}
+.intro_section:before{
+ left: 28px;
+}
+section.dam-payroll-benefit-section {
+ padding: 60px 0;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 34px;
+ margin-bottom: 20px;
+}
+.dam_partner_box_section {
+ margin-top: 25px;
+}
+.dam_partner_box p {
+ line-height: 27px;
+}
+section.reach-form-section::after {
+ max-width: 95px;
+ max-height: 103px;
+}
+.reach-form-heading {
+ font-size: 32px;
+ line-height: 41px;
+}
+.reach-form-content p {
+ font-size: 19px;
+ line-height: 32px;
+ margin-top: 10px;
+}
+.ra-solution-text {
+  min-height: 245px;
+}
+/* riyadh css */
+.riyadh-firm .approach_box {
+  min-height: 368px;
+}
+.riyadh-services .ra-solution-box h4 {
+  min-height: 64px;
+}
+.ry-solution-text {
+  min-height: 265px;
+}
+.khobar-approach-section.jubil-box-size .approach_box {
+  min-height: 490px;
+}
+}
+@media (max-width:1095px){
+  .ra-solution-text {
+    min-height: 280px;
+}
+.riyadh-firm .approach_box {
+  min-height: 400px;
+}
+}
+@media (max-width:991px){
+  
+  h2.apr_numbering {
+      margin-bottom: 20px;
+ }
+  .approach_box p {
+      line-height: 24px;
+ }
+  .approach_box {
+      min-height: 260px;
+ }
+ .dam-form-heading {
+ font-size: 33px !important;
+ line-height: 39px;
+ margin-bottom: 23px;
+ letter-spacing: normal;
+}
+.dam-form-heading::after {
+ max-width: 53px;
+ max-height: 70px;
+}
+.dam-form-content p {
+ line-height: 28px;
+}  
+.damam-form-section {
+ padding-bottom: 40px;
+}
+.damam-form-section::after {
+ max-width: 170px;
+ max-height: 340px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 30px;
+ line-height: 39px;
+}
+.req-partner_colm .req-partner_heading {
+ max-width: 470px;
+ padding-right: 40px;
+ padding-left: 40px;
+ width: 100%;
+}
+.pm-column-content h3 {
+ font-size: 24px;
+ line-height: 26px;
+}
+.pm-column-content p, .pm-column-content ul li {
+ line-height: 30px;
+ margin-top: 10px;
+}
+section.ra-solution-section {
+ padding-top: 50px;
+}
+.ra-solution-box {
+ max-width: calc(33% - 55px);
+ padding: 30px 12px 40px;
+}
+.ra-solution-box p {
+  min-height: 202px;
+}
+.ra-solution-box h4 {
+ font-size: 20px;
+}
+.dam-corp_heading h3 {
+ font-size: 30px;
+}
+.ra-solution-heading h3 {
+ font-size: 30px;
+}
+.approach_box {
+  min-height: 341px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 30px;
+}
+.req-partner_heading.pbs-heading p {
+ font-size: 18px;
+ line-height: 27px;
+}
+.pbs-box-section .dam_partner_box {
+ width: calc(100% - 30px );
+ margin: 0;
+ margin-bottom: 30px;
+}
+.reach-colm-1 {
+ flex: 0 0 100%;
+ max-width: 100%;
+}
+.reach-colm-2 {
+ flex: 0 0 100%;
+ max-width: 100%;
+}
+.reach-row {
+ flex-direction: column;
+}
+.reach-form-heading {
+ font-size: 30px;
+}
+.reach-form-content {
+ text-align: center;
+}
+.reach-form-content p {
+ font-size: 18px;
+ max-width: 100%;
+}
+section.reach-form-section {
+ padding: 50px 0 40px;
+}
+.reach-form {
+ max-width: 500px;
+ margin: auto;
+ margin-bottom: 40px;
+}
+/* riyadh css */
+.riyadh-firm .approach_box {
+  min-height: 415px;
+}
+.firm-riyadh-pera {
+  padding-top: 60px;
+}
+.riyadh-services .ra-solution-box h4 {
+  min-height: 56px;
+}
+.ry-solution-text {
+  min-height: 325px;
+}
+/* pr page start*/
+.pfc-text p {
+  font-size: 21px;
+  line-height: 36px;
+}
+
+/* pr page end*/
+.khobar-pbx-box .pbs_box {
+  min-height: auto;
+}
+}
+
+@media (max-width:907px){
+  .ra-solution-text {
+    min-height: 310px;
+}
+.riyadh-firm.prf-section .approach_box {
+  min-height: 485px;
+}
+}
+@media (max-width:767px){
+ .dam-row {
+ flex-direction: column;
+}
+.dam-colm-1 {
+ flex: 0 0 100%;
+ max-width: 100%;
+}
+.dam-colm-2 {
+ flex: 0 0 100%;
+ max-width: 100%;
+}
+.damam-form-section::after {
+ max-width: 100px;
+ max-height: 270px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 28px;
+ line-height: 37px;
+}
+.req-pm-partner-pera p {
+ line-height: 29px;
+}
+.pm-column-content h3 {
+ font-size: 22px;
+}
+.choice-other-pera {
+ margin-top: 20px;
+ margin-bottom: 35px;
+}
+.choice-bg-pera p {
+ font-size: 20px;
+ line-height: 27px;
+}
+.choice-bg-pera {
+ padding: 25px;
+}
+section.ra-solution-section {
+ padding-top: 40px;
+ padding-bottom: 50px;
+}
+.ra-solution-box {
+ max-width: calc(100% - 55px);
+}
+.ra-solution-box p {
+ min-height: auto;
+}
+.dam-corp_heading h3 {
+ font-size: 28px;
+}
+.dam_approach_boxes_section {
+ margin-top: 30px;
+}
+.approach_box h4 {
+ font-size: 18px;
+ line-height: 26px;
+}
+.approach_box p {
+ font-size: 15px;
+ line-height: 22px;
+}
+.approach_box {
+  min-height: 364px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 28px;
+}
+.reach-form-heading {
+ font-size: 28px;
+ line-height: 37px;
+}
+.reach-form-content p {
+ font-size: 16px;
+ line-height: 28px;
+}
+section.reach-form-section {
+ padding: 50px 0 30px;
+}
+.req-partner_colm .req-partner_heading {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.require-agency .req-partner_im {
+  width: 100%;
+}
+.ra-solution-text {
+  min-height: auto;
+}
+/* riyadh css */
+.riyadh-firm .approach_box {
+  min-height: 430px;
+}
+.firm-riyadh-pera {
+  padding-top: 45px;
+}
+.riyadh-conversation-section {
+  padding: 60px 0;
+}
+.conversation-content h3 {
+  font-size: 28px;
+}
+.riyadh-services .ra-solution-box h4 {
+  min-height: auto;
+}
+.ry-solution-text {
+  min-height: auto;
+}
+.riyadh-services .ra-solution-box h4 {
+  min-height: auto;
+}
+/* pr page start*/
+.pfc-text p {
+  font-size: 18px;
+  line-height: 30px;
+}
+/* pr page end*/
+.jubil-trs-section .ra-solution-box h4 {
+    min-height: auto;
+}
+}
+@media (max-width:576px){
+
+  .approach_box {
+    min-height: auto;
+    width: calc(100% - 0px);
+    margin-left: 0;
+    margin-right: 0;
+}
+.damam-form-section {
+ padding-top: 60px;
+}
+.dam-form-heading {
+ font-size: 28px !important;
+ line-height: 34px;
+ margin-bottom: 18px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 26px;
+ line-height: 32px;
+}
+.req-partner_colm {
+ flex-direction: column;
+}
+.req-partner_colm .req-partner_heading {
+ text-align: center;
+ margin-top: 30px;
+}
+.require-agency .req-partner_im {
+ width: auto;
+}
+.req-partner_colm:nth-child(2), .req-partner_colm:nth-child(4) {
+ flex-direction: column-reverse;
+}
+.choice-other-pera p {
+ font-size: 16px;
+ line-height: 30px;
+}
+.choice-bg-pera p {
+ font-size: 17px;
+ line-height: 24px;
+}
+.choice-bg-pera {
+ padding: 20px;
+}
+.choice-other-pera {
+ margin-top: 0;
+ margin-bottom: 30px;
+}
+.ra-solution-heading h3 {
+ font-size: 26px;
+}
+.dam-corp_heading h3 {
+ font-size: 26px;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 24px;
+}
+.req-partner_heading.pbs-heading p {
+ font-size: 16px;
+ line-height: 26px;
+}
+.reach-form-heading {
+ font-size: 26px;
+ line-height: 35px;
+}
+.req-partner_colm .req-partner_heading {
+  max-width: 100%;
+}
+/* riyadh css */
+.riyadh-firm .approach_box {
+  min-height: auto;
+}
+.conversation-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.conversation-content p {
+  font-size: 15px;
+  line-height: 23px;
+}
+.firm-riyadh-pera p {
+  font-size: 15px;
+  line-height: 23px;
+}
+.riyadh-pr-section .pm-column-content ul {
+  text-align: left;
+}
+.pr-company-section .pm-column-content ul {
+  list-style: none;
+  padding: 0;
+}
+section.require-agency.pr-aproach-section {
+  padding-bottom: 40px;
+}
+.riyadh-firm.prf-section .approach_box {
+  min-height: auto;
+}
+.partner-form-content {
+  width: 100%;
+  text-align: center;
+}
+.partner-form-form {
+  width: 100%;
+}
+.partner-form-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.khobar-approach-section.jubil-box-size .approach_box {
+    min-height: auto;
+}
+}
+@media (max-width:480px){
+ .dam-form-heading {
+ font-size: 26px;
+ line-height: 32px;
+}
+.dam-form-heading::after {
+ max-width: 40px;
+}
+.dam-form-content p {
+ font-size: 16px;
+ line-height: 26px;
+}
+.damam-form-section::after {
+ max-width: 70px;
+ max-height: 240px;
+}
+.require-agency .dam-corp_heading h3 {
+ font-size: 23px;
+ line-height: 32px;
+}
+.req-pm-partner-pera p {
+ font-size: 15px;
+ line-height: 24px;
+}
+.pm-column-content h3 {
+ font-size: 21px;
+}
+.pm-column-content p, .pm-column-content ul li {
+ font-size: 15px;
+ line-height: 24px;
+}
+.choice-other-pera p {
+ font-size: 15px;
+ line-height: 24px;
+}
+.choice-bg-pera {
+ padding: 15px;
+}
+.choice-bg-pera p {
+ font-size: 16px;
+ line-height: 23px;
+}
+.ra-solution-heading h3 {
+ font-size: 23px;
+}
+.ra-solution-box h4 {
+ font-size: 18px;
+}
+.ra-solution-box a {
+ font-weight: 700;
+ font-size: 15px;
+}
+.dam-corp_heading h3 {
+ font-size: 23px;
+}
+.dam-corp_pera p {
+ font-size: 15px;
+ line-height: 23px;
+}
+.approach_box h4 {
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 22px;
+}
+.dam_approach_boxes_section:after{
+ display: none;
+}
+section.dam-payroll-benefit-section {
+ padding: 43px 0;
+}
+.dam-payroll-benefit-section .req-partner_heading h3 {
+ font-size: 23px;
+}
+.req-partner_heading.pbs-heading p {
+ font-size: 15px;
+ line-height: 23px;
+}
+.pbs-box-section .dam_partner_box h6 {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+.dam_partner_box p {
+ font-size: 15px;
+ line-height: 23px;
+ margin-top: 5px;
+}
+.reach-form-heading {
+ font-size: 23px;
+ line-height: 32px;
+}
+.reach-form-content p {
+ font-size: 15px;
+ line-height: 23px;
+}
+.dam-form-content p {
+ font-size: 15px;
+ line-height: 23px;
+}
+.damam-form-section {
+ padding-top: 48px;
+}
+.dam-form-heading::after{
+ display: none;
+}
+.req-partner_colm {
+  padding: 0 0px;
+}
+.pbs_box {
+  padding: 30px 20px;
+}
+.reach-form {
+  padding: 25px 20px;
+}
+.hs-input.hs-fieldtype-intl-phone {
+  width: 100% !important;
+}
+/* riyadh css */
+.conversation-content h3 {
+  font-size: 22px;
+}
+.riyadh-conversation-section {
+  padding: 45px 0;
+}
+.firm-riyadh-pera {
+  padding-top: 10px;
+}
+.riyadh-firm .dam_approach_boxes_section {
+  margin-top: 25px;
+}
+.riyadh-firm .dam-corp_pera h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+section.require-discover-section {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+section.require-agency.pr-company-section {
+  padding: 45px 0 35px;
+}
+section.require-agency.pr-aproach-section {
+  padding-bottom: 30px;
+  padding-top: 45px;
+}
+.pfc-text p {
+  font-size: 17px;
+  line-height: 25px;
+}
+.partner-form-section {
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+}
