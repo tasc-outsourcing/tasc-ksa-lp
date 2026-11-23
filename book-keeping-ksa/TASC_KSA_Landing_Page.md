@@ -49,14 +49,11 @@ King Abdullah Financial District, Riyadh 13511, Saudi Arabia
 **Al Khobar**
 Al Rashid Towers, Dhahran Road, 2nd Floor
 Al Khobar, Saudi Arabia · P.O. Box 34448
-**+966 11 216 6218** → `tel:+966112166218`
 
 **General:** info@tascoutsourcing.com
 **Employee verification:** request@tascoutsourcing.com — footer only, do not put this in any CTA
 
-**Primary number for the page: +966 55 397 0703.** It's a mobile, so it can carry WhatsApp Business — which solves the WhatsApp problem the UAE page still has open. Al Khobar's landline goes in the footer only.
-
-> ⚠️ **Check the Al Khobar number.** `011` is the Riyadh area code; Eastern Province (Dammam, Dhahran, Al Khobar) is `013`. Either +966 11 216 6218 should read +966 13, or it's a Riyadh line that Al Khobar enquiries route to. Confirm before it goes on a live page.
+**Primary number for the page: +966 55 397 0703.** It's a mobile, so it can carry WhatsApp Business — which solves the WhatsApp problem the UAE page still has open.
 
 > **Legal entity note.** The Riyadh address begins "Top Talent Consulting Ltd." — the registered KSA entity. The brand on the page is TASC Corporate Services. Decide whether the footer shows the registered entity name alongside the brand. For a compliance service I'd show it: a verifiable legal entity is a trust signal, and it costs nothing.
 
