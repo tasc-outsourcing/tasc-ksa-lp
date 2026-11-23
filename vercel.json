@@ -163,12 +163,21 @@
     {
       "source": "/recruitment-process-outsourcing/",
       "destination": "/recruitment-process-outsourcing/index.html"
+    },
+    {
+      "source": "/thank-you-candidate/",
+      "destination": "/thank-you-candidate/index.html"
     }
   ],
   "redirects": [
     {
       "source": "/recruitment-process-outsourcing",
       "destination": "/recruitment-process-outsourcing/",
+      "permanent": false
+    },
+    {
+      "source": "/thank-you-candidate",
+      "destination": "/thank-you-candidate/",
       "permanent": false
     }
   ]
