@@ -43,18 +43,13 @@
     const target=document.createElement('div');target.id='hubspot-instance-'+current;host.append(target);
     try{
       await loadLibrary();if(current!==generation||!modal.open)return;
-      hbspt.forms.create({portalId:'20309062',formId:'f5f010be-e7b5-4214-9dc8-41a512804387',region:'na1',inlineMessage:'Thank you. Your request has been received.',target:'#'+target.id,formInstanceId:'rpo-'+current,
+      hbspt.forms.create({portalId:'20309062',formId:'f5f010be-e7b5-4214-9dc8-41a512804387',region:'na1',target:'#'+target.id,formInstanceId:'rpo-'+current,
         onFormReady:()=>{if(current===generation)status.textContent='';polishForm(target);},
         onFormSubmitted:()=>{
           if(current!==generation)return;
-          host.hidden=true;status.textContent='';success.hidden=false;
-          const heading=document.createElement('h3');heading.tabIndex=-1;
-          heading.textContent=kind==='report'?'Your report is ready.':kind==='case'?'Your case study is ready.':'Thank you. Your request has been received.';success.append(heading);
-          if(kind==='case'||kind==='report'){
-            const link=document.createElement('a');link.className='btn';link.textContent='Download PDF';link.href=kind==='report'?'documents/hotel-hiring-report-review.pdf':'documents/'+asset+'-case-study.pdf';link.download='';success.append(link);
-          }
+          status.textContent='Thank you. Taking you to the confirmation page…';
           window.dataLayer.push({event:'rpo_form_success',request_type:kind,resource_id:identifier});
-          document.dispatchEvent(new CustomEvent('tasc:submission-confirmed',{detail:{confirmed:true,kind:kind==='report'?'report':'consultation'}}));heading.focus();
+          document.dispatchEvent(new CustomEvent('tasc:submission-confirmed',{detail:{confirmed:true,kind:kind==='report'?'report':'consultation'}}));
         }
       });
       setTimeout(()=>{if(current===generation&&modal.open&&status.textContent==='Loading form…')status.textContent='The form is taking longer to load. Check your connection or content blocker, then close and reopen this form.';},15000);
@@ -84,7 +79,6 @@
     try{
       await loadLibrary();
       hbspt.forms.create({portalId:'20309062',formId:'f5f010be-e7b5-4214-9dc8-41a512804387',region:'na1',target:'#'+target.id,formInstanceId:'inline-consultation-'+index,
-        inlineMessage:'Thank you. Your request has been received.',
         onFormReady:()=>{message.textContent='';polishForm(target);},
         onFormSubmitted:()=>{
           window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'rpo_form_success',request_type:'consultation',resource_id:'rpo-consultation',form_location:'inline'});
